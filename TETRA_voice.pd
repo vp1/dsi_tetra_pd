@@ -1,411 +1,373 @@
-#N canvas 5 116 1018 511 10;
-#X obj 8 361 cnv 15 350 130 empty empty empty 20 12 0 14 -261633 -66577
+#N canvas 1 87 1018 511 10;
+#X obj 28 361 cnv 15 350 130 empty empty empty 20 12 0 14 -261633 -66577
 0;
-#X obj 25 364 tgl 15 0 TETRA_\$1_UNISON_ON_OFF empty \$1_UNISON_ON_OFF
+#X obj 45 364 tgl 15 0 TETRA_\$1_UNISON_ON_OFF empty \$1_UNISON_ON_OFF
 17 7 0 10 -262144 -1 -1 0 1;
-#X obj 37 399 hradio 15 1 0 5 TETRA_\$1_UNISON_MODE empty \$1_UNISON_MODE
+#X obj 57 399 hradio 15 1 0 5 TETRA_\$1_UNISON_MODE empty \$1_UNISON_MODE
 0 -8 0 10 -262144 -1 -1 0;
-#X text 36 415 0 1 voice \; 1 all voices \; 2 all voices detune1 \;
+#X text 56 415 0 1 voice \; 1 all voices \; 2 all voices detune1 \;
 3 all voices detune2 \; 4 all voices detune3;
-#X obj 200 402 hradio 15 1 0 6 TETRA_\$1_UNISON_ASIGN empty \$1_UNISON_ASIGN
+#X obj 220 402 hradio 15 1 0 6 TETRA_\$1_UNISON_ASIGN empty \$1_UNISON_ASIGN
 0 -8 0 10 -262144 -1 -1 0;
-#X obj 188 62 cnv 15 170 180 empty empty empty 20 12 0 14 -261633 -66577
+#X obj 208 62 cnv 15 170 180 empty empty empty 20 12 0 14 -261633 -66577
 0;
-#X floatatom 194 68 5 0 120 1 #1_OSC_2_FREQ - TETRA_#1_OSC_2_FREQ;
-#X floatatom 194 86 5 0 100 1 #1_OSC_2_FREQ_FINE - TETRA_#1_OSC_2_FREQ_FINE
+#X floatatom 214 68 5 0 120 1 #1_OSC_2_FREQ - TETRA_#1_OSC_2_FREQ;
+#X floatatom 214 86 5 0 100 1 #1_OSC_2_FREQ_FINE - TETRA_#1_OSC_2_FREQ_FINE
 ;
-#X floatatom 198 151 5 0 103 1 #1_OSC_2_SHAPE - TETRA_#1_OSC_2_SHAPE
+#X floatatom 218 151 5 0 103 1 #1_OSC_2_SHAPE - TETRA_#1_OSC_2_SHAPE
 ;
-#X floatatom 198 204 5 0 127 1 #1_GLIDE_2 - TETRA_#1_GLIDE_2;
-#X obj 8 62 cnv 15 170 180 empty empty empty 20 12 0 14 -261633 -66577
+#X floatatom 218 204 5 0 127 1 #1_GLIDE_2 - TETRA_#1_GLIDE_2;
+#X obj 28 62 cnv 15 170 180 empty empty empty 20 12 0 14 -261633 -66577
 0;
-#X floatatom 18 68 5 0 120 1 #1_OSC_1_FREQ - TETRA_#1_OSC_1_FREQ;
-#X floatatom 18 86 5 0 100 1 #1_OSC_1_FREQ_FINE - TETRA_#1_OSC_1_FREQ_FINE
+#X floatatom 38 68 5 0 120 1 #1_OSC_1_FREQ - TETRA_#1_OSC_1_FREQ;
+#X floatatom 38 86 5 0 100 1 #1_OSC_1_FREQ_FINE - TETRA_#1_OSC_1_FREQ_FINE
 ;
-#X floatatom 18 151 5 0 103 1 #1_OSC_1_SHAPE - TETRA_#1_OSC_1_SHAPE
+#X floatatom 38 151 5 0 103 1 #1_OSC_1_SHAPE - TETRA_#1_OSC_1_SHAPE
 ;
-#X floatatom 18 204 5 0 127 1 #1_GLIDE_1 - TETRA_#1_GLIDE_1;
-#X floatatom 140 121 5 0 99 0 - - -;
-#X obj 140 136 + 4;
-#X text 78 103 0 off \; 1 saw \; 2 tri \; 3 saw/tri;
-#X text 201 420 0 low note \; 1 low retrig \; 2 high note \; 3 high
+#X floatatom 38 204 5 0 127 1 #1_GLIDE_1 - TETRA_#1_GLIDE_1;
+#X floatatom 160 121 5 0 99 0 - - -;
+#X obj 160 136 + 4;
+#X text 98 103 0 off \; 1 saw \; 2 tri \; 3 saw/tri;
+#X text 221 420 0 low note \; 1 low retrig \; 2 high note \; 3 high
 retrig \; 4 last note \; 5 last retrig;
-#X obj 198 117 hradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
-#X floatatom 320 121 5 0 99 0 - - -;
-#X obj 320 136 + 4;
-#X text 258 103 0 off \; 1 saw \; 2 tri \; 3 saw/tri;
-#X msg 140 103 50;
-#X msg 320 103 50;
-#X obj 198 222 tgl 15 0 TETRA_\$1_OSC_2_KEY empty \$1_OSC_2_KEY 17
+#X obj 218 117 hradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144
+-1 -1 1;
+#X floatatom 340 121 5 0 99 0 - - -;
+#X obj 340 136 + 4;
+#X text 278 103 0 off \; 1 saw \; 2 tri \; 3 saw/tri;
+#X msg 160 103 50;
+#X msg 340 103 50;
+#X obj 218 222 tgl 15 0 TETRA_\$1_OSC_2_KEY empty \$1_OSC_2_KEY 17
 7 0 10 -262144 -1 -1 0 1;
-#X obj 19 223 tgl 15 0 TETRA_\$1_OSC_1_KEY empty \$1_OSC_1_KEY 17 7
+#X obj 39 223 tgl 15 0 TETRA_\$1_OSC_1_KEY empty \$1_OSC_1_KEY 17 7
 0 10 -262144 -1 -1 0 1;
-#X obj 22 182 hsl 128 15 0 127 0 0 TETRA_\$1_SUB_OSC_1_VOL empty \$1_SUB_OSC_1_VOL
+#X obj 42 182 hsl 128 15 0 127 0 0 TETRA_\$1_SUB_OSC_1_VOL empty \$1_SUB_OSC_1_VOL
 -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 201 182 hsl 128 15 0 127 0 0 TETRA_\$1_SUB_OSC_2_VOL empty \$1_SUB_OSC_2_VOL
+#X obj 221 182 hsl 128 15 0 127 0 0 TETRA_\$1_SUB_OSC_2_VOL empty \$1_SUB_OSC_2_VOL
 -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 18 117 hradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144 -1
--1 0;
-#X obj 8 252 cnv 15 350 100 empty empty empty 20 12 0 14 -261633 -66577
+#X obj 38 117 hradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144 -1
+-1 1;
+#X obj 28 252 cnv 15 350 100 empty empty empty 20 12 0 14 -261633 -66577
 0;
-#X floatatom 20 296 5 0 5 1 #1_OSC_SLOP - TETRA_#1_OSC_SLOP;
-#X floatatom 125 293 5 0 127 1 #1_FEEDBACK_GAIN - TETRA_#1_FEEDBACK_GAIN
+#X floatatom 40 296 5 0 5 1 #1_OSC_SLOP - TETRA_#1_OSC_SLOP;
+#X floatatom 145 293 5 0 127 1 #1_FEEDBACK_GAIN - TETRA_#1_FEEDBACK_GAIN
 ;
-#X floatatom 125 312 5 0 127 1 #1_FEEDBACK_VOL - TETRA_#1_FEEDBACK_VOL
+#X floatatom 145 312 5 0 127 1 #1_FEEDBACK_VOL - TETRA_#1_FEEDBACK_VOL
 ;
-#X obj 274 267 hradio 15 1 0 4 TETRA_\$1_GLIDE_MODE empty \$1_GLIDE_MODE
+#X obj 294 267 hradio 15 1 0 4 TETRA_\$1_GLIDE_MODE empty \$1_GLIDE_MODE
 0 -8 0 10 -262144 -1 -1 0;
-#X obj 34 266 tgl 15 0 TETRA_\$1_SYNC empty \$1_SYNC 17 7 0 10 -262144
+#X obj 54 266 tgl 15 0 TETRA_\$1_SYNC empty \$1_SYNC 17 7 0 10 -262144
 -1 -1 0 1;
-#X text 270 282 0 rate \; 1 rate auto \; 2 time \; 3 time auto;
-#X obj 122 269 hsl 128 15 0 127 0 0 TETRA_\$1_OSC_MIX empty \$1_OSC_MIX
+#X text 290 282 0 rate \; 1 rate auto \; 2 time \; 3 time auto;
+#X obj 142 269 hsl 128 15 0 127 0 0 TETRA_\$1_OSC_MIX empty \$1_OSC_MIX
 -2 -8 0 10 -262144 -1 -1 0 1;
-#X msg 185 254 64;
-#X obj 18 332 hsl 128 15 0 127 0 0 TETRA_\$1_NOISE_LEVEL empty \$1_NOISE_LEVEL
+#X msg 205 254 64;
+#X obj 38 332 hsl 128 15 0 127 0 0 TETRA_\$1_NOISE_LEVEL empty \$1_NOISE_LEVEL
 -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 404 10 cnv 15 80 30 empty empty empty 20 12 0 14 -91039 -66577
+#X obj 424 10 cnv 15 80 30 empty empty empty 20 12 0 14 -91039 -66577
 0;
-#X obj 418 18 TETRA_\$1;
-#X obj 368 271 cnv 15 320 220 empty empty empty 20 12 0 14 -172851
+#X obj 438 18 TETRA_\$1;
+#X obj 388 271 cnv 15 320 220 empty empty empty 20 12 0 14 -172851
 -66577 0;
-#X floatatom 387 438 5 0 127 1 #1_FIL_KEY_AMT - TETRA_#1_FIL_KEY_AMT
+#X floatatom 407 438 5 0 127 1 #1_FIL_KEY_AMT - TETRA_#1_FIL_KEY_AMT
 ;
-#X floatatom 387 421 5 0 127 1 #1_FIL_AUDIO_MOD - TETRA_#1_FIL_AUDIO_MOD
+#X floatatom 407 421 5 0 127 1 #1_FIL_AUDIO_MOD - TETRA_#1_FIL_AUDIO_MOD
 ;
-#X floatatom 542 290 5 0 254 1 #1_FILTER_ENV_AMT - TETRA_#1_FILTER_ENV_AMT
+#X floatatom 562 290 5 0 254 1 #1_FILTER_ENV_AMT - TETRA_#1_FILTER_ENV_AMT
 ;
-#X floatatom 542 307 5 0 127 1 #1_FIL_ENV_VEL_AMT - TETRA_#1_FIL_ENV_VEL_AMT
+#X floatatom 562 307 5 0 127 1 #1_FIL_ENV_VEL_AMT - TETRA_#1_FIL_ENV_VEL_AMT
 ;
-#X obj 382 332 hsl 165 15 0 164 0 0 TETRA_\$1_FILTER_FREQ empty \$1_FILTER_FREQ
+#X obj 402 332 hsl 165 15 0 164 0 0 TETRA_\$1_FILTER_FREQ empty \$1_FILTER_FREQ
 -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 382 369 hsl 128 15 0 127 0 0 TETRA_\$1_RESONANCE empty \$1_RESONANCE
+#X obj 402 369 hsl 128 15 0 127 0 0 TETRA_\$1_RESONANCE empty \$1_RESONANCE
 -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 382 289 hradio 15 1 0 2 TETRA_\$1_FILTER_POLES empty \$1_FILTER_POLES
+#X obj 402 289 hradio 15 1 0 2 TETRA_\$1_FILTER_POLES empty \$1_FILTER_POLES
 0 -8 0 10 -262144 -1 -1 0;
-#X text 419 287 0 two \; 1 four;
-#X floatatom 543 377 5 0 127 1 #1_FIL_DEL - TETRA_#1_FIL_DEL;
-#X floatatom 543 395 5 0 127 1 #1_FIL_ATT - TETRA_#1_FIL_ATT;
-#X floatatom 543 413 5 0 127 1 #1_FIL_DEC - TETRA_#1_FIL_DEC;
-#X floatatom 543 431 5 0 127 1 #1_FIL_SUS - TETRA_#1_FIL_SUS;
-#X floatatom 543 449 5 0 127 1 #1_FIL_REL - TETRA_#1_FIL_REL;
-#X obj 368 62 cnv 15 320 200 empty empty empty 20 12 0 14 -100878 -66577
+#X text 439 287 0 two \; 1 four;
+#X floatatom 563 377 5 0 127 1 #1_FIL_DEL - TETRA_#1_FIL_DEL;
+#X floatatom 563 395 5 0 127 1 #1_FIL_ATT - TETRA_#1_FIL_ATT;
+#X floatatom 563 413 5 0 127 1 #1_FIL_DEC - TETRA_#1_FIL_DEC;
+#X floatatom 563 431 5 0 127 1 #1_FIL_SUS - TETRA_#1_FIL_SUS;
+#X floatatom 563 449 5 0 127 1 #1_FIL_REL - TETRA_#1_FIL_REL;
+#X obj 388 62 cnv 15 320 200 empty empty empty 20 12 0 14 -100878 -66577
 0;
-#X floatatom 542 83 5 0 127 1 #1_VCA_ENV_AMOUNT - TETRA_#1_VCA_ENV_AMOUNT
+#X floatatom 562 83 5 0 127 1 #1_VCA_ENV_AMOUNT - TETRA_#1_VCA_ENV_AMOUNT
 ;
-#X floatatom 542 101 5 0 127 1 #1_VCA_ENV_VEL_AMT - TETRA_#1_VCA_ENV_VEL_AMT
+#X floatatom 562 101 5 0 127 1 #1_VCA_ENV_VEL_AMT - TETRA_#1_VCA_ENV_VEL_AMT
 ;
-#X floatatom 542 161 5 0 127 1 #1_VCA_DEL - TETRA_#1_VCA_DEL;
-#X floatatom 542 179 5 0 127 1 #1_VCA_ATT - TETRA_#1_VCA_ATT;
-#X floatatom 542 197 5 0 127 1 #1_VCA_DEC - TETRA_#1_VCA_DEC;
-#X floatatom 542 215 5 0 127 1 #1_VCA_SUS - TETRA_#1_VCA_SUS;
-#X floatatom 542 233 5 0 127 1 #1_VCA_REL - TETRA_#1_VCA_REL;
-#X obj 392 78 vsl 15 128 0 127 0 0 TETRA_\$1_VCA_LEVEL empty \$1_VCA_LEVEL
+#X floatatom 562 161 5 0 127 1 #1_VCA_DEL - TETRA_#1_VCA_DEL;
+#X floatatom 562 179 5 0 127 1 #1_VCA_ATT - TETRA_#1_VCA_ATT;
+#X floatatom 562 197 5 0 127 1 #1_VCA_DEC - TETRA_#1_VCA_DEC;
+#X floatatom 562 215 5 0 127 1 #1_VCA_SUS - TETRA_#1_VCA_SUS;
+#X floatatom 562 233 5 0 127 1 #1_VCA_REL - TETRA_#1_VCA_REL;
+#X obj 412 78 vsl 15 128 0 127 0 0 TETRA_\$1_VCA_LEVEL empty \$1_VCA_LEVEL
+0 -9 0 10 -262144 -1 -1 7900 1;
+#X obj 415 234 hsl 128 15 0 127 0 0 TETRA_\$1_OUTPUT_PAN empty \$1_OUTPUT_PAN
+-2 -8 0 10 -262144 -1 -1 0 1;
+#X msg 478 219 64;
+#X obj 486 78 vsl 15 128 0 127 0 0 TETRA_\$1_PRESET_VOLUME empty \$1_PRESET_VOLUME
 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 395 234 hsl 128 15 0 127 0 0 TETRA_\$1_OUTPUT_PAN empty \$1_OUTPUT_PAN
--2 -8 0 10 -262144 -1 -1 6400 1;
-#X msg 458 219 64;
-#X obj 466 78 vsl 15 128 0 127 0 0 TETRA_\$1_PRESET_VOLUME empty \$1_PRESET_VOLUME
-0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 699 80 symbol \$1;
-#X obj 699 62 loadbang;
-#X msg 699 98 \; TETRA_\$1_OSC_1_KEY 0 \; TETRA_\$1_OSC_2_KEY 0;
-#X obj 10 500 cnv 15 230 160 empty empty empty 20 12 0 14 -221265 -66577
+#X obj 719 80 symbol \$1;
+#X obj 719 62 loadbang;
+#X msg 719 98 \; TETRA_\$1_OSC_1_KEY 0 \; TETRA_\$1_OSC_2_KEY 0;
+#X obj 30 500 cnv 15 230 160 empty empty empty 20 12 0 14 -221265 -66577
 0;
-#X obj 250 500 cnv 15 230 160 empty empty empty 20 12 0 14 -221265
+#X obj 270 500 cnv 15 230 160 empty empty empty 20 12 0 14 -221265
 -66577 0;
-#X obj 490 500 cnv 15 230 160 empty empty empty 20 12 0 14 -221265
+#X obj 510 500 cnv 15 230 160 empty empty empty 20 12 0 14 -221265
 -66577 0;
-#X obj 730 500 cnv 15 230 160 empty empty empty 20 12 0 14 -221265
+#X obj 750 500 cnv 15 230 160 empty empty empty 20 12 0 14 -221265
 -66577 0;
-#X floatatom 21 506 5 0 166 1 #1_LFO_1_FREQ - TETRA_#1_LFO_1_FREQ;
-#X floatatom 21 616 5 0 48 1 #1_LFO_1_DEST - TETRA_#1_LFO_1_DEST;
-#X floatatom 261 506 5 0 166 1 #1_LFO_2_FREQ - TETRA_#1_LFO_2_FREQ
+#X floatatom 41 506 5 0 166 1 #1_LFO_1_FREQ - TETRA_#1_LFO_1_FREQ;
+#X floatatom 41 616 5 0 48 1 #1_LFO_1_DEST - TETRA_#1_LFO_1_DEST;
+#X floatatom 281 506 5 0 166 1 #1_LFO_2_FREQ - TETRA_#1_LFO_2_FREQ
 ;
-#X floatatom 261 616 5 0 48 1 #1_LFO_2_DEST - TETRA_#1_LFO_2_DEST;
-#X floatatom 502 506 5 0 166 1 #1_LFO_3_FREQ - TETRA_#1_LFO_3_FREQ
+#X floatatom 281 616 5 0 48 1 #1_LFO_2_DEST - TETRA_#1_LFO_2_DEST;
+#X floatatom 522 506 5 0 166 1 #1_LFO_3_FREQ - TETRA_#1_LFO_3_FREQ
 ;
-#X floatatom 501 616 5 0 48 1 #1_LFO_3_DEST - TETRA_#1_LFO_3_DEST;
-#X floatatom 739 506 5 0 166 1 #1_LFO_4_FREQ - TETRA_#1_LFO_4_FREQ
+#X floatatom 521 616 5 0 48 1 #1_LFO_3_DEST - TETRA_#1_LFO_3_DEST;
+#X floatatom 759 506 5 0 166 1 #1_LFO_4_FREQ - TETRA_#1_LFO_4_FREQ
 ;
-#X floatatom 741 616 5 0 48 1 #1_LFO_4_DEST - TETRA_#1_LFO_4_DEST;
-#X obj 21 584 TETRA_dest;
-#X symbolatom 29 600 20 0 0 0 - - -;
-#X obj 261 584 TETRA_dest;
-#X symbolatom 269 600 20 0 0 0 - - -;
-#X obj 501 584 TETRA_dest;
-#X symbolatom 509 600 20 0 0 0 - - -;
-#X obj 741 584 TETRA_dest;
-#X symbolatom 749 600 20 0 0 0 - - -;
-#X obj 21 639 tgl 15 0 TETRA_\$1_LFO_1_SYNC empty \$1_LFO_1_SYNC 17
+#X floatatom 761 616 5 0 48 1 #1_LFO_4_DEST - TETRA_#1_LFO_4_DEST;
+#X obj 41 584 TETRA_dest;
+#X symbolatom 49 600 20 0 0 0 - - -;
+#X obj 281 584 TETRA_dest;
+#X symbolatom 289 600 20 0 0 0 - - -;
+#X obj 521 584 TETRA_dest;
+#X symbolatom 529 600 20 0 0 0 - - -;
+#X obj 761 584 TETRA_dest;
+#X symbolatom 769 600 20 0 0 0 - - -;
+#X obj 41 639 tgl 15 0 TETRA_\$1_LFO_1_SYNC empty \$1_LFO_1_SYNC 17
 7 0 10 -262144 -1 -1 0 1;
-#X obj 261 639 tgl 15 0 TETRA_\$1_LFO_2_SYNC empty \$1_LFO_2_SYNC 17
+#X obj 281 639 tgl 15 0 TETRA_\$1_LFO_2_SYNC empty \$1_LFO_2_SYNC 17
 7 0 10 -262144 -1 -1 0 1;
-#X obj 501 639 tgl 15 0 TETRA_\$1_LFO_3_SYNC empty \$1_LFO_3_SYNC 17
+#X obj 521 639 tgl 15 0 TETRA_\$1_LFO_3_SYNC empty \$1_LFO_3_SYNC 17
 7 0 10 -262144 -1 -1 0 1;
-#X obj 741 639 tgl 15 0 TETRA_\$1_LFO_4_SYNC empty \$1_LFO_4_SYNC 17
+#X obj 761 639 tgl 15 0 TETRA_\$1_LFO_4_SYNC empty \$1_LFO_4_SYNC 17
 7 0 10 -262144 -1 -1 0 1;
-#X obj 20 542 hradio 15 1 0 5 TETRA_\$1_LFO_1_SHAPE empty \$1_LFO_1_SHAPE
+#X obj 40 542 hradio 15 1 0 5 TETRA_\$1_LFO_1_SHAPE empty \$1_LFO_1_SHAPE
 0 -8 0 10 -262144 -1 -1 0;
-#X text 104 523 0 tri \; 1 rev saw \; 2 saw \; 3 square \; 4 random
+#X text 124 523 0 tri \; 1 rev saw \; 2 saw \; 3 square \; 4 random
 ;
-#X obj 260 542 hradio 15 1 0 5 TETRA_\$1_LFO_2_SHAPE empty \$1_LFO_2_SHAPE
+#X obj 280 542 hradio 15 1 0 5 TETRA_\$1_LFO_2_SHAPE empty \$1_LFO_2_SHAPE
 0 -8 0 10 -262144 -1 -1 0;
-#X text 344 523 0 tri \; 1 rev saw \; 2 saw \; 3 square \; 4 random
+#X text 364 523 0 tri \; 1 rev saw \; 2 saw \; 3 square \; 4 random
 ;
-#X obj 500 542 hradio 15 1 0 5 TETRA_\$1_LFO_3_SHAPE empty \$1_LFO_3_SHAPE
+#X obj 520 542 hradio 15 1 0 5 TETRA_\$1_LFO_3_SHAPE empty \$1_LFO_3_SHAPE
 0 -8 0 10 -262144 -1 -1 0;
-#X text 584 523 0 tri \; 1 rev saw \; 2 saw \; 3 square \; 4 random
+#X text 604 523 0 tri \; 1 rev saw \; 2 saw \; 3 square \; 4 random
 ;
-#X obj 740 542 hradio 15 1 0 5 TETRA_\$1_LFO_4_SHAPE empty \$1_LFO_4_SHAPE
+#X obj 760 542 hradio 15 1 0 5 TETRA_\$1_LFO_4_SHAPE empty \$1_LFO_4_SHAPE
 0 -8 0 10 -262144 -1 -1 0;
-#X text 824 523 0 tri \; 1 rev saw \; 2 saw \; 3 square \; 4 random
+#X text 844 523 0 tri \; 1 rev saw \; 2 saw \; 3 square \; 4 random
 ;
-#X obj 170 520 vsl 15 128 0 127 0 0 TETRA_\$1_LFO_1_AMT empty \$1_LFO_1_AMT
+#X obj 190 520 vsl 15 128 0 127 0 0 TETRA_\$1_LFO_1_AMT empty \$1_LFO_1_AMT
 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 410 520 vsl 15 128 0 127 0 0 TETRA_\$1_LFO_2_AMT empty \$1_LFO_2_AMT
+#X obj 430 520 vsl 15 128 0 127 0 0 TETRA_\$1_LFO_2_AMT empty \$1_LFO_2_AMT
 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 650 520 vsl 15 128 0 127 0 0 TETRA_\$1_LFO_3_AMT empty \$1_LFO_3_AMT
+#X obj 670 520 vsl 15 128 0 127 0 0 TETRA_\$1_LFO_3_AMT empty \$1_LFO_3_AMT
 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 890 520 vsl 15 128 0 127 0 0 TETRA_\$1_LFO_4_AMT empty \$1_LFO_4_AMT
+#X obj 910 520 vsl 15 128 0 127 0 0 TETRA_\$1_LFO_4_AMT empty \$1_LFO_4_AMT
 0 -9 0 10 -262144 -1 -1 0 1;
-#X obj 699 341 cnv 15 260 150 empty empty empty 20 12 0 14 -221289
+#X obj 719 341 cnv 15 260 150 empty empty empty 20 12 0 14 -221289
 -66577 0;
-#X floatatom 708 385 5 0 48 1 #1_ENV_3_DEST - TETRA_#1_ENV_3_DEST;
-#X floatatom 708 448 5 0 254 1 #1_ENV_3_AMT - TETRA_#1_ENV_3_AMT;
-#X floatatom 708 466 5 0 127 1 #1_ENV_3_VEL_AMT - TETRA_#1_ENV_3_VEL_AMT
+#X floatatom 728 385 5 0 48 1 #1_ENV_3_DEST - TETRA_#1_ENV_3_DEST;
+#X floatatom 728 448 5 0 254 1 #1_ENV_3_AMT - TETRA_#1_ENV_3_AMT;
+#X floatatom 728 466 5 0 127 1 #1_ENV_3_VEL_AMT - TETRA_#1_ENV_3_VEL_AMT
 ;
-#X floatatom 838 396 5 0 127 1 #1_ENV_3_DELAY - TETRA_#1_ENV_3_DELAY
+#X floatatom 858 396 5 0 127 1 #1_ENV_3_DELAY - TETRA_#1_ENV_3_DELAY
 ;
-#X floatatom 838 414 5 0 127 1 #1_ENV_3_ATT - TETRA_#1_ENV_3_ATT;
-#X floatatom 838 432 5 0 127 1 #1_ENV_3_DEC - TETRA_#1_ENV_3_DEC;
-#X floatatom 838 450 5 0 127 1 #1_ENV_3_SUS - TETRA_#1_ENV_3_SUS;
-#X floatatom 838 468 5 0 127 1 #1_ENV_3_REL - TETRA_#1_ENV_3_REL;
-#X obj 708 353 TETRA_dest;
-#X symbolatom 716 369 20 0 0 0 - - -;
-#X obj 708 414 tgl 15 0 TETRA_\$1_ENV_3_REPEAT empty \$1_ENV_3_REPEAT
+#X floatatom 858 414 5 0 127 1 #1_ENV_3_ATT - TETRA_#1_ENV_3_ATT;
+#X floatatom 858 432 5 0 127 1 #1_ENV_3_DEC - TETRA_#1_ENV_3_DEC;
+#X floatatom 858 450 5 0 127 1 #1_ENV_3_SUS - TETRA_#1_ENV_3_SUS;
+#X floatatom 858 468 5 0 127 1 #1_ENV_3_REL - TETRA_#1_ENV_3_REL;
+#X obj 728 353 TETRA_dest;
+#X symbolatom 736 369 20 0 0 0 - - -;
+#X obj 728 414 tgl 15 0 TETRA_\$1_ENV_3_REPEAT empty \$1_ENV_3_REPEAT
 17 7 0 10 -262144 -1 -1 0 1;
-#X obj 10 670 cnv 15 230 160 empty empty empty 20 12 0 14 -198882 -66577
+#X obj 30 670 cnv 15 230 160 empty empty empty 20 12 0 14 -198882 -66577
 0;
-#X obj 250 670 cnv 15 230 160 empty empty empty 20 12 0 14 -198882
+#X obj 270 670 cnv 15 230 160 empty empty empty 20 12 0 14 -198882
 -66577 0;
-#X obj 490 670 cnv 15 230 160 empty empty empty 20 12 0 14 -198882
+#X obj 510 670 cnv 15 230 160 empty empty empty 20 12 0 14 -198882
 -66577 0;
-#X obj 730 670 cnv 15 230 160 empty empty empty 20 12 0 14 -198882
+#X obj 750 670 cnv 15 230 160 empty empty empty 20 12 0 14 -198882
 -66577 0;
-#X floatatom 21 710 5 0 20 1 #1_MOD_SOURCE_1 - TETRA_#1_MOD_SOURCE_1
+#X floatatom 41 710 5 0 20 1 #1_MOD_SOURCE_1 - TETRA_#1_MOD_SOURCE_1
 ;
-#X floatatom 21 796 5 0 48 1 #1_MOD_DEST_1 - TETRA_#1_MOD_DEST_1;
-#X floatatom 261 710 5 0 20 1 #1_MOD_SOURCE_2 - TETRA_#1_MOD_SOURCE_2
+#X floatatom 41 796 5 0 48 1 #1_MOD_DEST_1 - TETRA_#1_MOD_DEST_1;
+#X floatatom 281 710 5 0 20 1 #1_MOD_SOURCE_2 - TETRA_#1_MOD_SOURCE_2
 ;
-#X floatatom 261 796 5 0 48 1 #1_MOD_DEST_2 - TETRA_#1_MOD_DEST_2;
-#X floatatom 501 710 5 0 20 1 #1_MOD_SOURCE_3 - TETRA_#1_MOD_SOURCE_3
+#X floatatom 281 796 5 0 48 1 #1_MOD_DEST_2 - TETRA_#1_MOD_DEST_2;
+#X floatatom 521 710 5 0 20 1 #1_MOD_SOURCE_3 - TETRA_#1_MOD_SOURCE_3
 ;
-#X floatatom 501 796 5 0 48 1 #1_MOD_DEST_3 - TETRA_#1_MOD_DEST_3;
-#X floatatom 741 710 5 0 20 1 #1_MOD_SOURCE_4 - TETRA_#1_MOD_SOURCE_4
+#X floatatom 521 796 5 0 48 1 #1_MOD_DEST_3 - TETRA_#1_MOD_DEST_3;
+#X floatatom 761 710 5 0 20 1 #1_MOD_SOURCE_4 - TETRA_#1_MOD_SOURCE_4
 ;
-#X floatatom 741 796 5 0 48 1 #1_MOD_DEST_4 - TETRA_#1_MOD_DEST_4;
-#X obj 21 765 TETRA_dest;
-#X symbolatom 29 781 20 0 0 0 - - -;
-#X obj 261 765 TETRA_dest;
-#X symbolatom 269 781 20 0 0 0 - - -;
-#X obj 501 765 TETRA_dest;
-#X symbolatom 509 781 20 0 0 0 - - -;
-#X obj 741 765 TETRA_dest;
-#X symbolatom 749 781 20 0 0 0 - - -;
-#X symbolatom 29 695 20 0 0 0 - - -;
-#X obj 21 679 TETRA_src;
-#X symbolatom 269 695 20 0 0 0 - - -;
-#X obj 261 679 TETRA_src;
-#X symbolatom 509 695 20 0 0 0 - - -;
-#X obj 501 679 TETRA_src;
-#X symbolatom 749 695 20 0 0 0 - - -;
-#X obj 741 679 TETRA_src;
-#X obj 170 690 vsl 15 128 0 254 0 0 TETRA_\$1_MOD_AMT_1 empty \$1_MOD_AMT_1
-0 -9 0 10 -262144 -1 -1 6350 1;
-#X msg 143 738 127;
-#X obj 410 690 vsl 15 128 0 254 0 0 TETRA_\$1_MOD_AMT_2 empty \$1_MOD_AMT_2
-0 -9 0 10 -262144 -1 -1 6350 1;
-#X msg 383 738 127;
-#X obj 650 690 vsl 15 128 0 254 0 0 TETRA_\$1_MOD_AMT_3 empty \$1_MOD_AMT_3
-0 -9 0 10 -262144 -1 -1 6350 1;
-#X msg 623 738 127;
-#X obj 890 690 vsl 15 128 0 254 0 0 TETRA_\$1_MOD_AMT_4 empty \$1_MOD_AMT_4
-0 -9 0 10 -262144 -1 -1 6350 1;
-#X msg 863 738 127;
-#X obj 460 841 cnv 15 500 250 empty empty empty 20 12 0 14 -67108 -66577
+#X floatatom 761 796 5 0 48 1 #1_MOD_DEST_4 - TETRA_#1_MOD_DEST_4;
+#X obj 41 765 TETRA_dest;
+#X symbolatom 49 781 20 0 0 0 - - -;
+#X obj 281 765 TETRA_dest;
+#X symbolatom 289 781 20 0 0 0 - - -;
+#X obj 521 765 TETRA_dest;
+#X symbolatom 529 781 20 0 0 0 - - -;
+#X obj 761 765 TETRA_dest;
+#X symbolatom 769 781 20 0 0 0 - - -;
+#X symbolatom 49 695 20 0 0 0 - - -;
+#X obj 41 679 TETRA_src;
+#X symbolatom 289 695 20 0 0 0 - - -;
+#X obj 281 679 TETRA_src;
+#X symbolatom 529 695 20 0 0 0 - - -;
+#X obj 521 679 TETRA_src;
+#X symbolatom 769 695 20 0 0 0 - - -;
+#X obj 761 679 TETRA_src;
+#X obj 190 690 vsl 15 128 0 254 0 0 TETRA_\$1_MOD_AMT_1 empty \$1_MOD_AMT_1
+0 -9 0 10 -262144 -1 -1 0 1;
+#X msg 163 738 127;
+#X obj 430 690 vsl 15 128 0 254 0 0 TETRA_\$1_MOD_AMT_2 empty \$1_MOD_AMT_2
+0 -9 0 10 -262144 -1 -1 0 1;
+#X msg 403 738 127;
+#X obj 670 690 vsl 15 128 0 254 0 0 TETRA_\$1_MOD_AMT_3 empty \$1_MOD_AMT_3
+0 -9 0 10 -262144 -1 -1 0 1;
+#X msg 643 738 127;
+#X obj 910 690 vsl 15 128 0 254 0 0 TETRA_\$1_MOD_AMT_4 empty \$1_MOD_AMT_4
+0 -9 0 10 -262144 -1 -1 0 1;
+#X msg 883 738 127;
+#X obj 480 841 cnv 15 500 250 empty empty empty 20 12 0 14 -67108 -66577
 0;
-#X floatatom 798 894 5 0 48 1 #1_MOD_WHEEL_DEST - TETRA_#1_MOD_WHEEL_DEST
+#X floatatom 818 894 5 0 48 1 #1_MOD_WHEEL_DEST - TETRA_#1_MOD_WHEEL_DEST
 ;
-#X floatatom 638 893 5 0 48 1 #1_PRESSURE_DEST - TETRA_#1_PRESSURE_DEST
+#X floatatom 658 893 5 0 48 1 #1_PRESSURE_DEST - TETRA_#1_PRESSURE_DEST
 ;
-#X floatatom 638 1014 5 0 48 1 #1_BREATH_DEST - TETRA_#1_BREATH_DEST
+#X floatatom 658 1014 5 0 48 1 #1_BREATH_DEST - TETRA_#1_BREATH_DEST
 ;
-#X floatatom 478 893 5 0 48 1 #1_VELOCITY_DEST - TETRA_#1_VELOCITY_DEST
+#X floatatom 498 893 5 0 48 1 #1_VELOCITY_DEST - TETRA_#1_VELOCITY_DEST
 ;
-#X floatatom 478 1014 5 0 48 1 #1_FOOT_DEST - TETRA_#1_FOOT_DEST;
-#X floatatom 807 977 5 0 12 1 #1_PBEND_RANGE - TETRA_#1_PBEND_RANGE
+#X floatatom 498 1014 5 0 48 1 #1_FOOT_DEST - TETRA_#1_FOOT_DEST;
+#X floatatom 827 977 5 0 12 1 #1_PBEND_RANGE - TETRA_#1_PBEND_RANGE
 ;
-#X floatatom 807 1047 5 0 127 1 #1_PUSH_IT_NOTE - TETRA_#1_PUSH_IT_NOTE
+#X floatatom 827 1047 5 0 127 1 #1_PUSH_IT_NOTE - TETRA_#1_PUSH_IT_NOTE
 ;
-#X floatatom 807 1065 5 0 127 1 #1_PUSH_IT_VELOCITY - TETRA_#1_PUSH_IT_VELOCITY
+#X floatatom 827 1065 5 0 127 1 #1_PUSH_IT_VELOCITY - TETRA_#1_PUSH_IT_VELOCITY
 ;
-#X text 843 1018 0 normal \; 1 toggle;
-#X obj 807 1022 hradio 15 1 0 2 TETRA_\$1_PUSH_IT_MODE empty \$1_PUSH_IT_MODE
+#X text 863 1018 0 normal \; 1 toggle;
+#X obj 827 1022 hradio 15 1 0 2 TETRA_\$1_PUSH_IT_MODE empty \$1_PUSH_IT_MODE
 0 -8 0 10 -262144 -1 -1 0;
-#X obj 798 861 TETRA_dest;
-#X symbolatom 806 877 20 0 0 0 - - -;
-#X obj 638 981 TETRA_dest;
-#X symbolatom 646 997 20 0 0 0 - - -;
-#X obj 478 981 TETRA_dest;
-#X symbolatom 486 997 20 0 0 0 - - -;
-#X obj 638 861 TETRA_dest;
-#X symbolatom 646 877 20 0 0 0 - - -;
-#X obj 478 861 TETRA_dest;
-#X symbolatom 486 877 20 0 0 0 - - -;
-#X obj 802 931 hsl 128 15 0 254 0 0 TETRA_\$1_MOD_WHEEL_AMT empty \$1_MOD_WHEEL_AMT
--2 -8 0 10 -262144 -1 -1 6350 1;
-#X msg 865 916 127;
-#X obj 641 1051 hsl 128 15 0 254 0 0 TETRA_\$1_BREATH_AMT empty \$1_BREATH_AMT
--2 -8 0 10 -262144 -1 -1 6350 1;
-#X msg 704 1036 127;
-#X obj 481 1051 hsl 128 15 0 254 0 0 TETRA_\$1_FOOT_AMT empty \$1_FOOT_AMT
--2 -8 0 10 -262144 -1 -1 6350 1;
-#X msg 544 1036 127;
-#X obj 642 931 hsl 128 15 0 254 0 0 TETRA_\$1_PRESSURE_AMT empty \$1_PRESSURE_AMT
--2 -8 0 10 -262144 -1 -1 6350 1;
-#X msg 695 916 127;
-#X obj 481 931 hsl 128 15 0 254 0 0 TETRA_\$1_VELOCITY_AMT empty \$1_VELOCITY_AMT
--2 -8 0 10 -262144 -1 -1 6350 1;
-#X msg 544 916 127;
-#X obj 10 841 cnv 15 440 250 empty empty empty 20 12 0 14 -260097 -66577
+#X obj 818 861 TETRA_dest;
+#X symbolatom 826 877 20 0 0 0 - - -;
+#X obj 658 981 TETRA_dest;
+#X symbolatom 666 997 20 0 0 0 - - -;
+#X obj 498 981 TETRA_dest;
+#X symbolatom 506 997 20 0 0 0 - - -;
+#X obj 658 861 TETRA_dest;
+#X symbolatom 666 877 20 0 0 0 - - -;
+#X obj 498 861 TETRA_dest;
+#X symbolatom 506 877 20 0 0 0 - - -;
+#X obj 822 931 hsl 128 15 0 254 0 0 TETRA_\$1_MOD_WHEEL_AMT empty \$1_MOD_WHEEL_AMT
+-2 -8 0 10 -262144 -1 -1 0 1;
+#X msg 885 916 127;
+#X obj 661 1051 hsl 128 15 0 254 0 0 TETRA_\$1_BREATH_AMT empty \$1_BREATH_AMT
+-2 -8 0 10 -262144 -1 -1 0 1;
+#X msg 724 1036 127;
+#X obj 501 1051 hsl 128 15 0 254 0 0 TETRA_\$1_FOOT_AMT empty \$1_FOOT_AMT
+-2 -8 0 10 -262144 -1 -1 0 1;
+#X msg 564 1036 127;
+#X obj 662 931 hsl 128 15 0 254 0 0 TETRA_\$1_PRESSURE_AMT empty \$1_PRESSURE_AMT
+-2 -8 0 10 -262144 -1 -1 0 1;
+#X msg 715 916 127;
+#X obj 501 931 hsl 128 15 0 254 0 0 TETRA_\$1_VELOCITY_AMT empty \$1_VELOCITY_AMT
+-2 -8 0 10 -262144 -1 -1 0 1;
+#X msg 564 916 127;
+#X obj 30 841 cnv 15 440 250 empty empty empty 20 12 0 14 -260097 -66577
 0;
-#X floatatom 30 1008 5 0 14 1 #1_ARP_MODE - TETRA_#1_ARP_MODE;
-#X floatatom 28 876 5 30 250 1 #1_TEMPO - TETRA_#1_TEMPO;
-#X floatatom 118 892 5 0 12 1 #1_TIME_SIG - TETRA_#1_TIME_SIG;
-#X floatatom 302 1067 5 0 48 1 #1_SEQ_4_DEST - TETRA_#1_SEQ_4_DEST
+#X floatatom 50 1008 5 0 14 1 #1_ARP_MODE - TETRA_#1_ARP_MODE;
+#X floatatom 48 876 5 30 250 1 #1_TEMPO - TETRA_#1_TEMPO;
+#X floatatom 138 892 5 0 12 1 #1_TIME_SIG - TETRA_#1_TIME_SIG;
+#X floatatom 322 1067 5 0 48 1 #1_SEQ_4_DEST - TETRA_#1_SEQ_4_DEST
 ;
-#X floatatom 302 1007 5 0 48 1 #1_SEQ_3_DEST - TETRA_#1_SEQ_3_DEST
+#X floatatom 322 1007 5 0 48 1 #1_SEQ_3_DEST - TETRA_#1_SEQ_3_DEST
 ;
-#X floatatom 302 947 5 0 48 1 #1_SEQ_2_DEST - TETRA_#1_SEQ_2_DEST;
-#X floatatom 302 887 5 0 48 1 #1_SEQ_1_DEST - TETRA_#1_SEQ_1_DEST;
-#X obj 28 946 tgl 15 0 TETRA_\$1_ARP_ON_OFF empty \$1_ARP_ON_OFF 17
+#X floatatom 322 947 5 0 48 1 #1_SEQ_2_DEST - TETRA_#1_SEQ_2_DEST;
+#X floatatom 322 887 5 0 48 1 #1_SEQ_1_DEST - TETRA_#1_SEQ_1_DEST;
+#X obj 48 946 tgl 15 0 TETRA_\$1_ARP_ON_OFF empty \$1_ARP_ON_OFF 17
 7 0 10 -262144 -1 -1 0 1;
-#X obj 158 946 tgl 15 0 TETRA_\$1_SEQ_ON_OFF empty \$1_SEQ_ON_OFF 17
-7 0 10 -262144 -1 -1 0 1;
-#X obj 158 985 hradio 15 1 0 5 TETRA_\$1_SEQ_TRIGGER empty \$1_SEQ_TRIGGER
+#X obj 178 946 tgl 15 0 TETRA_\$1_SEQ_ON_OFF empty \$1_SEQ_ON_OFF 17
+7 0 10 -262144 -1 -1 1 1;
+#X obj 178 985 hradio 15 1 0 5 TETRA_\$1_SEQ_TRIGGER empty \$1_SEQ_TRIGGER
 0 -8 0 10 -262144 -1 -1 0;
-#X obj 302 856 TETRA_dest;
-#X symbolatom 310 872 20 0 0 0 - - -;
-#X obj 302 916 TETRA_dest;
-#X symbolatom 310 932 20 0 0 0 - - -;
-#X obj 302 976 TETRA_dest;
-#X symbolatom 310 992 20 0 0 0 - - -;
-#X obj 302 1036 TETRA_dest;
-#X symbolatom 310 1052 20 0 0 0 - - -;
-#X obj 118 860 TETRA_div;
-#X symbolatom 126 876 20 0 0 0 - - -;
-#X text 154 1002 0 normal \; 1 normal no reset \; 2 no gate \; 3 no
+#X obj 322 856 TETRA_dest;
+#X symbolatom 330 872 20 0 0 0 - - -;
+#X obj 322 916 TETRA_dest;
+#X symbolatom 330 932 20 0 0 0 - - -;
+#X obj 322 976 TETRA_dest;
+#X symbolatom 330 992 20 0 0 0 - - -;
+#X obj 322 1036 TETRA_dest;
+#X symbolatom 330 1052 20 0 0 0 - - -;
+#X obj 138 860 TETRA_div;
+#X symbolatom 146 876 20 0 0 0 - - -;
+#X text 174 1002 0 normal \; 1 normal no reset \; 2 no gate \; 3 no
 gate no reset \; 4 key step;
-#X obj 30 975 TETRA_arp;
-#X symbolatom 38 990 14 0 0 0 - - -;
-#X text 462 1908 ------;
-#X obj 10 1102 cnv 15 950 190 empty empty empty 20 12 0 14 -3264 -66577
+#X obj 50 975 TETRA_arp;
+#X symbolatom 58 990 14 0 0 0 - - -;
+#X text 485 1462 ------;
+#X obj 30 1101 cnv 15 470 170 empty empty empty 20 12 0 14 -3264 -66577
 0;
 #N canvas 1 87 450 300 (subpatch) 0;
 #X array \$1_SEQ_1_ARRAY 16 float 2;
-#X coords 0 127 16 0 240 160 1 0 0;
-#X restore 21 1120 graph;
-#X obj 631 1136 until;
-#X obj 666 1156 + 1;
-#X msg 623 1115 16;
-#X obj 631 1175 mod 16;
-#X obj 658 1218 tabread \$1_SEQ_1_ARRAY;
-#X obj 631 1277 s TETRA_\$1_SEQ_1;
-#X obj 631 1258 pack;
-#X obj 631 1197 t f f;
-#X obj 631 1156 f 0;
-#X obj 658 1237 i;
-#X obj 631 1237 i;
-#X text 667 1113 <-- read elements;
-#X obj 272 1139 symbol \$1;
-#X obj 272 1120 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 10 1302 cnv 15 950 190 empty empty empty 20 12 0 14 -3264 -66577
+#X coords 0 125 16 0 200 140 1 0 0;
+#X restore 41 1119 graph;
+#X obj 30 1281 cnv 15 470 170 empty empty empty 20 12 0 14 -3264 -66577
 0;
-#X obj 10 1702 cnv 15 950 190 empty empty empty 20 12 0 14 -3264 -66577
+#X obj 510 1281 cnv 15 470 170 empty empty empty 20 12 0 14 -3264 -66577
 0;
-#X obj 10 1502 cnv 15 950 190 empty empty empty 20 12 0 14 -3264 -66577
+#X obj 510 1101 cnv 15 470 170 empty empty empty 20 12 0 14 -3264 -66577
 0;
 #N canvas 0 0 450 300 (subpatch) 0;
 #X array \$1_SEQ_2_ARRAY 16 float 2;
-#X coords 0 126 16 0 240 160 1 0 0;
-#X restore 21 1320 graph;
+#X coords 0 125 16 0 200 140 1 0 0;
+#X restore 41 1299 graph;
 #N canvas 0 0 450 300 (subpatch) 0;
 #X array \$1_SEQ_3_ARRAY 16 float 2;
-#X coords 0 126 16 0 240 160 1 0 0;
-#X restore 21 1520 graph;
+#X coords 0 125 16 0 200 140 1 0 0;
+#X restore 521 1119 graph;
 #N canvas 0 0 450 300 (subpatch) 0;
 #X array \$1_SEQ_4_ARRAY 16 float 2;
-#X coords 0 126 16 0 240 160 1 0 0;
-#X restore 21 1720 graph;
-#X text 603 1294 TODO - send only changes;
-#X obj 790 1333 until;
-#X obj 825 1353 + 1;
-#X msg 782 1312 16;
-#X obj 790 1372 mod 16;
-#X obj 790 1455 pack;
-#X obj 790 1394 t f f;
-#X obj 790 1353 f 0;
-#X obj 817 1434 i;
-#X obj 790 1434 i;
-#X text 762 1491 TODO - send only changes;
-#X text 826 1310 <-- read elements;
-#X obj 616 1528 until;
-#X obj 651 1548 + 1;
-#X msg 608 1507 16;
-#X obj 616 1567 mod 16;
-#X obj 616 1650 pack;
-#X obj 616 1589 t f f;
-#X obj 616 1548 f 0;
-#X obj 643 1629 i;
-#X obj 616 1629 i;
-#X text 588 1686 TODO - send only changes;
-#X text 652 1505 <-- read elements;
-#X obj 804 1732 until;
-#X obj 839 1752 + 1;
-#X msg 796 1711 16;
-#X obj 804 1771 mod 16;
-#X obj 804 1854 pack;
-#X obj 804 1793 t f f;
-#X obj 804 1752 f 0;
-#X obj 831 1833 i;
-#X obj 804 1833 i;
-#X text 776 1890 TODO - send only changes;
-#X text 840 1709 <-- read elements;
-#X obj 817 1415 tabread \$1_SEQ_2_ARRAY;
-#X obj 643 1610 tabread \$1_SEQ_3_ARRAY;
-#X obj 831 1814 tabread \$1_SEQ_4_ARRAY;
-#X obj 790 1474 s TETRA_\$1_SEQ_2;
-#X obj 616 1669 s TETRA_\$1_SEQ_3;
-#X obj 804 1873 s TETRA_\$1_SEQ_4;
-#X obj 272 1339 symbol \$1;
-#X obj 272 1320 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X coords 0 125 16 0 200 140 1 0 0;
+#X restore 521 1299 graph;
+#X msg 250 1139 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15;
+#X obj 250 1232 s TETRA_\$1_SEQ_1;
+#X obj 367 1191 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 272 1539 symbol \$1;
-#X obj 272 1520 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X text 421 1184 0-125 pitch \; 126 reset \; 127 rest;
+#X msg 252 1319 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15;
+#X obj 369 1371 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 272 1739 symbol \$1;
-#X obj 272 1720 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X text 423 1364 0-125 pitch \; 126 reset;
+#X msg 732 1139 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15;
+#X obj 849 1191 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 272 1358 \; \$1_SEQ_2_ARRAY 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13
-14 15;
-#X msg 272 1558 \; \$1_SEQ_3_ARRAY 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13
-14 15;
-#X msg 272 1758 \; \$1_SEQ_4_ARRAY 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13
-14 15;
-#X msg 272 1157 \; \$1_SEQ_1_ARRAY 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13
-14 15;
+#X text 903 1184 0-125 pitch \; 126 reset;
+#X msg 732 1319 0 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15;
+#X obj 849 1371 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 903 1364 0-125 pitch \; 126 reset;
+#X obj 252 1412 s TETRA_\$1_SEQ_2;
+#X obj 732 1232 s TETRA_\$1_SEQ_3;
+#X obj 732 1412 s TETRA_\$1_SEQ_4;
+#X obj 732 1392 TETRA_sequencer \$1 4;
+#X obj 732 1212 TETRA_sequencer \$1 3;
+#X obj 252 1392 TETRA_sequencer \$1 2;
+#X obj 250 1212 TETRA_sequencer \$1 1;
+#X msg 274 1179 8 126;
+#X msg 731 1100 0 60 65 67 72 126;
+#X msg 263 1159 4 126;
+#X msg 745 1339 4 126;
+#X msg 756 1179 8 126;
+#X msg 756 1359 8 126;
+#X msg 265 1339 4 126;
+#X msg 276 1359 8 126;
+#X msg 745 1159 6 126;
+#X msg 731 1120 0 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30 30;
 #X connect 15 0 16 0;
 #X connect 16 0 13 0;
 #X connect 19 0 8 0;
@@ -475,59 +437,25 @@ gate no reset \; 4 key step;
 #X connect 205 1 206 0;
 #X connect 208 0 187 0;
 #X connect 208 1 209 0;
-#X connect 213 0 221 0;
-#X connect 214 0 221 1;
-#X connect 215 0 213 0;
-#X connect 216 0 214 0;
-#X connect 216 0 220 0;
-#X connect 217 0 222 0;
-#X connect 219 0 218 0;
-#X connect 220 0 223 0;
-#X connect 220 1 217 0;
-#X connect 221 0 216 0;
-#X connect 222 0 219 1;
-#X connect 223 0 219 0;
-#X connect 225 0 282 0;
-#X connect 226 0 225 0;
-#X connect 234 0 240 0;
-#X connect 235 0 240 1;
-#X connect 236 0 234 0;
-#X connect 237 0 235 0;
-#X connect 237 0 239 0;
-#X connect 238 0 270 0;
-#X connect 239 0 242 0;
-#X connect 239 1 267 0;
-#X connect 240 0 237 0;
-#X connect 241 0 238 1;
-#X connect 242 0 238 0;
-#X connect 245 0 251 0;
-#X connect 246 0 251 1;
-#X connect 247 0 245 0;
-#X connect 248 0 246 0;
-#X connect 248 0 250 0;
-#X connect 249 0 271 0;
-#X connect 250 0 253 0;
-#X connect 250 1 268 0;
-#X connect 251 0 248 0;
-#X connect 252 0 249 1;
-#X connect 253 0 249 0;
-#X connect 256 0 262 0;
-#X connect 257 0 262 1;
-#X connect 258 0 256 0;
-#X connect 259 0 257 0;
-#X connect 259 0 261 0;
-#X connect 260 0 272 0;
-#X connect 261 0 264 0;
-#X connect 261 1 269 0;
-#X connect 262 0 259 0;
-#X connect 263 0 260 1;
-#X connect 264 0 260 0;
-#X connect 267 0 241 0;
-#X connect 268 0 252 0;
-#X connect 269 0 263 0;
-#X connect 273 0 279 0;
-#X connect 274 0 273 0;
-#X connect 275 0 280 0;
-#X connect 276 0 275 0;
-#X connect 277 0 281 0;
-#X connect 278 0 277 0;
+#X connect 219 0 238 0;
+#X connect 221 0 238 1;
+#X connect 223 0 237 0;
+#X connect 224 0 237 1;
+#X connect 226 0 236 0;
+#X connect 227 0 236 1;
+#X connect 229 0 235 0;
+#X connect 230 0 235 1;
+#X connect 235 0 234 0;
+#X connect 236 0 233 0;
+#X connect 237 0 232 0;
+#X connect 238 0 220 0;
+#X connect 239 0 238 0;
+#X connect 240 0 236 0;
+#X connect 241 0 238 0;
+#X connect 242 0 235 0;
+#X connect 243 0 236 0;
+#X connect 244 0 235 0;
+#X connect 245 0 237 0;
+#X connect 246 0 237 0;
+#X connect 247 0 236 0;
+#X connect 248 0 236 0;

@@ -29,19 +29,19 @@
 #X obj 730 84 makenote;
 #X msg 730 63 60 127 1000;
 #X obj 265 215 hradio 15 1 0 5 TETRA_MIDI_CLOCK_SOURCE empty MIDI_CLOCK_SOURCE
-0 -8 0 10 -262144 -1 -1 3;
-#X obj 60 35 TETRA_voice B;
-#X obj -47 87 TETRA_voice Q;
-#X obj -47 70 TETRA_voice V4;
-#X obj -47 36 TETRA_voice V2;
-#X obj -47 19 TETRA_voice V1;
-#X obj -47 53 TETRA_voice V3;
+0 -8 0 10 -262144 -1 -1 0;
 #X obj -46 211 hradio 15 1 0 4 TETRA_BANK_SELECT empty BANK_SELECT
 0 -8 0 10 -262144 -1 -1 0;
 #X text -43 230 0 bank 1 \; 1 bank 2 \; 2 bank 3 \; 3 bank 4 \;;
 #X text 268 233 0 internal \; 1 v1 master \; 2 midi out \; 3 midi in
 \; 4 midi in/out;
 #X text 729 40 note \, vel \, dur;
+#X obj 60 35 TETRA_voice B;
+#X obj -47 87 TETRA_voice Q;
+#X obj -47 70 TETRA_voice V4;
+#X obj -47 36 TETRA_voice V2;
+#X obj -47 19 TETRA_voice V1;
+#X obj -47 53 TETRA_voice V3;
 #X connect 1 0 0 0;
 #X connect 21 0 20 0;
 #X connect 21 1 20 1;
