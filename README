@@ -1,3 +1,7 @@
 PureData patch to control Dave Instruments Tetra (TETR4) via NRPN MIDI protocol
 
-CAUTION: not at all ready yet...
+The main patch file is TETRA.pd, so start there
+
+NOTE: 
+This patch is in a very early phase of development, not even completely implemented yet. 
+Any constructive suggestions/critiques/contributions more than welcome!
