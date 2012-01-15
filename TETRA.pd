@@ -21,9 +21,8 @@
 #X floatatom 414 162 5 0 1 1 PROGRAM_COMBO - TETRA_PROGRAM_COMBO;
 #X floatatom 414 180 5 0 4 1 SELECT_VOICE - TETRA_SELECT_VOICE;
 #X floatatom 568 162 5 0 127 1 SPLIT_POINT - TETRA_SPLIT_POINT;
-#X floatatom 568 144 5 0 2 1 SPLIT_MODE - TETRA_SPLIT_MODE;
 #X floatatom -46 162 5 0 13 1 BALANCE_TWEAK - TETRA_BALANCE_TWEAK;
-#X floatatom 568 179 5 0 2 1 KEYBOARD_MODE - TETRA_KEYBOARD_MODE;
+#X floatatom 568 144 5 0 2 1 KEYBOARD_MODE - TETRA_KEYBOARD_MODE;
 #X obj 730 105 noteout;
 #X obj 730 84 makenote;
 #X msg 730 63 60 127 1000;
@@ -43,11 +42,8 @@
 #X obj 856 393 TETRA_voice B;
 #X obj 749 428 TETRA_voice V4;
 #X text 747 452 NOT WORKING!!!;
-#X obj 77 73 TETRA_voice A 3;
 #X obj 77 33 TETRA_voice A 1;
-#X obj 77 53 TETRA_voice A 2;
-#X obj 77 93 TETRA_voice A 4;
 #X connect 1 0 0 0;
+#X connect 19 0 18 0;
+#X connect 19 1 18 1;
 #X connect 20 0 19 0;
-#X connect 20 1 19 1;
-#X connect 21 0 20 0;
