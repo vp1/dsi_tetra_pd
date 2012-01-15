@@ -1,0 +1,5 @@
+#N canvas 266 169 450 300 10;
+#X obj 67 40 tetra_multi/TETRA_voice A 1;
+#X obj 67 60 tetra_multi/TETRA_voice A 2;
+#X obj 67 80 tetra_multi/TETRA_voice A 3;
+#X obj 67 100 tetra_multi/TETRA_voice A 4;
