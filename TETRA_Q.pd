@@ -1,5 +1,5 @@
-#N canvas 1 127 450 300 10;
-#N canvas 0 86 511 514 Q_oscillators 0;
+#N canvas 1 135 450 300 10;
+#N canvas 0 86 1024 514 Q_oscillators 1;
 #X obj 6 39 clip 0 120;
 #X obj 7 132 clip 0 100;
 #X obj 6 233 clip 0 103;
@@ -62,7 +62,7 @@
 #X obj 811 158 send_nrpn 608;
 #X obj 811 58 send_nrpn 611;
 #X obj 719 18 r TETRA_Q_UNISON_ON_OFF;
-#X obj 719 118 r TETRA_Q_UNISON_ASIGN;
+#X obj 719 118 r TETRA_Q_UNISON_ASSIGN;
 #X connect 0 0 41 0;
 #X connect 1 0 42 0;
 #X connect 2 0 43 0;
@@ -540,7 +540,7 @@
 #X connect 14 0 5 0;
 #X connect 15 0 6 0;
 #X restore 76 173 pd Q_seq_arp;
-#N canvas 1 87 1022 511 Q_sequencers 1;
+#N canvas 1 87 1022 511 Q_sequencers 0;
 #X obj 48 47 unpack;
 #X obj 48 90 clip 0 127;
 #X obj 123 89 clip 0 15;

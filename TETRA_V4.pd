@@ -1,5 +1,5 @@
-#N canvas 1 127 450 300 10;
-#N canvas 1 87 1022 511 v4_oscillators 0;
+#N canvas 1 135 450 300 10;
+#N canvas 1 87 1022 511 v4_oscillators 1;
 #X obj 6 39 clip 0 120;
 #X obj 7 132 clip 0 100;
 #X obj 6 233 clip 0 103;
@@ -60,9 +60,9 @@
 #X obj 739 44 clip 0 1;
 #X obj 739 144 clip 0 5;
 #X obj 739 18 r TETRA_V4_UNISON_ON_OFF;
-#X obj 739 118 r TETRA_V4_UNISON_ASIGN;
 #X obj 831 58 send_nrpn 1379;
 #X obj 831 158 send_nrpn 1376;
+#X obj 739 118 r TETRA_V4_UNISON_ASSIGN;
 #X connect 0 0 41 0;
 #X connect 1 0 42 0;
 #X connect 2 0 43 0;
@@ -101,10 +101,10 @@
 #X connect 35 0 10 0;
 #X connect 36 0 5 0;
 #X connect 56 0 11 0;
-#X connect 57 0 61 0;
-#X connect 58 0 62 0;
+#X connect 57 0 60 0;
+#X connect 58 0 61 0;
 #X connect 59 0 57 0;
-#X connect 60 0 58 0;
+#X connect 62 0 58 0;
 #X restore 62 24 pd v4_oscillators;
 #N canvas 1 87 1022 511 v4_filter 0;
 #X obj 40 56 clip 0 164;
@@ -540,7 +540,7 @@
 #X connect 14 0 3 0;
 #X connect 15 0 4 0;
 #X restore 62 155 pd v4_seq_arp;
-#N canvas 1 87 1022 511 v4_sequencers 1;
+#N canvas 1 87 1022 511 v4_sequencers 0;
 #X obj 48 47 unpack;
 #X obj 48 90 clip 0 127;
 #X obj 123 89 clip 0 15;
