@@ -43,6 +43,9 @@
 #X obj 749 428 TETRA_voice V4;
 #X text 747 452 NOT WORKING!!!;
 #X obj 77 33 TETRA_voice A 1;
+#X obj 77 53 TETRA_voice A 2;
+#X obj 77 73 TETRA_voice A 3;
+#X obj 77 93 TETRA_voice A 4;
 #X connect 1 0 0 0;
 #X connect 19 0 18 0;
 #X connect 19 1 18 1;
