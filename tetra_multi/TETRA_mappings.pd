@@ -118,7 +118,17 @@
 #X obj 1818 213 r TETRA_A_\$1_SEQ_2_STEP;
 #X obj 1818 283 r TETRA_A_\$1_SEQ_3_STEP;
 #X obj 1818 353 r TETRA_A_\$1_SEQ_4_STEP;
+#X floatatom 2029 30 5 0 0 0 - - -;
+#X obj 2029 12 r TETRA_A_\$1_PROGRAM_CHANGE;
+#X obj 2029 47 pgmout \$1;
+#X floatatom 2029 96 5 0 0 0 - - -;
+#X obj 2029 114 ctlout 32 \$1;
+#X obj 2029 77 r TETRA_A_\$1_BANK_SELECT;
 #X connect 115 0 108 0;
 #X connect 116 0 109 0;
 #X connect 117 0 110 0;
 #X connect 118 0 111 0;
+#X connect 119 0 121 0;
+#X connect 120 0 119 0;
+#X connect 122 0 123 0;
+#X connect 124 0 122 0;
