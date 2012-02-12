@@ -1,4 +1,4 @@
-#N canvas 1 87 1022 511 10;
+#N canvas 1 95 830 511 10;
 #X obj 18 12 send_nrpn A \$1 OSC_1_FREQ 0;
 #X obj 18 52 send_nrpn A \$1 OSC_1_FREQ_FINE 1;
 #X obj 18 92 send_nrpn A \$1 OSC_1_SHAPE 2;
@@ -92,8 +92,6 @@
 #X obj 1418 332 send_nrpn A \$1 TIME_SIG 92;
 #X obj 1418 372 send_nrpn A \$1 PBEND_RANGE 93;
 #X obj 1418 412 send_nrpn A \$1 SEQ_TRIGGER 94;
-#X obj 1418 452 send_nrpn A \$1 UNISON_MODE 96;
-#X obj 1608 12 send_nrpn A \$1 UNISON_ASSIGN 95;
 #X obj 1608 52 send_nrpn A \$1 ARP_MODE 97;
 #X obj 1608 92 send_nrpn A \$1 ENV3_REPEAT 98;
 #X obj 1608 132 send_nrpn A \$1 UNISON_ON_OFF 99;
@@ -124,11 +122,13 @@
 #X floatatom 2029 96 5 0 0 0 - - -;
 #X obj 2029 114 ctlout 32 \$1;
 #X obj 2029 77 r TETRA_A_\$1_BANK_SELECT;
+#X obj 1418 452 send_nrpn A \$1 UNISON_ASSIGN 96;
+#X obj 1608 12 send_nrpn A \$1 UNISON_MODE 95;
+#X connect 113 0 106 0;
+#X connect 114 0 107 0;
 #X connect 115 0 108 0;
 #X connect 116 0 109 0;
-#X connect 117 0 110 0;
-#X connect 118 0 111 0;
-#X connect 119 0 121 0;
-#X connect 120 0 119 0;
-#X connect 122 0 123 0;
-#X connect 124 0 122 0;
+#X connect 117 0 119 0;
+#X connect 118 0 117 0;
+#X connect 120 0 121 0;
+#X connect 122 0 120 0;
