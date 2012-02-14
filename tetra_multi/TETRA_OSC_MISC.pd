@@ -1,4 +1,4 @@
-#N canvas 1 87 450 300 10;
+#N canvas 1 96 722 437 10;
 #X obj 180 346 hradio 15 1 0 4 TETRA_\$1_\$2_GLIDE_MODE empty GLIDE_MODE
 0 -8 0 10 -262144 -1 -1 0;
 #X obj 115 346 tgl 15 0 TETRA_\$1_\$2_SYNC empty SYNC 17 7 0 10 -262144
@@ -8,101 +8,36 @@
 -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 114 178 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_NOISE_LEVEL empty
 NOISE_LEVEL -2 -8 0 10 -262144 -1 -1 0 1;
-#N canvas 1 104 1438 780 m 0;
-#X msg 170 157 set \$1;
-#X obj 170 197 outlet;
-#X obj 170 139 inlet;
-#X msg 170 177 0;
-#X obj 222 162 r init_\$1_\$2_\$3;
-#X connect 0 0 3 0;
-#X connect 2 0 0 0;
-#X connect 3 0 1 0;
-#X connect 4 0 3 0;
-#X restore 80 178 pd m;
-#N canvas 1 104 1438 780 m 0;
-#X msg 170 157 set \$1;
-#X obj 170 197 outlet;
-#X obj 170 139 inlet;
-#X msg 170 177 0;
-#X obj 222 162 r init_\$1_\$2_\$3;
-#X connect 0 0 3 0;
-#X connect 2 0 0 0;
-#X connect 3 0 1 0;
-#X connect 4 0 3 0;
-#X restore 84 346 pd m;
-#N canvas 1 111 830 511 m 0;
-#X msg 170 157 set \$1;
-#X obj 170 197 outlet;
-#X obj 170 139 inlet;
-#X obj 222 162 r init_\$1_\$2_\$3;
-#X msg 170 177 64;
-#X connect 0 0 4 0;
-#X connect 2 0 0 0;
-#X connect 3 0 4 0;
-#X connect 4 0 1 0;
-#X restore 80 128 pd m;
-#N canvas 1 104 1438 780 m 0;
-#X msg 170 157 set \$1;
-#X obj 170 197 outlet;
-#X obj 170 139 inlet;
-#X msg 170 177 0;
-#X obj 222 162 r init_\$1_\$2_\$3;
-#X connect 0 0 3 0;
-#X connect 2 0 0 0;
-#X connect 3 0 1 0;
-#X connect 4 0 3 0;
-#X restore 149 346 pd m;
 #X obj 115 304 hradio 15 1 0 6 TETRA_\$1_\$2_OSC_SLOP empty OSC_SLOP
 0 -8 0 10 -262144 -1 -1 0;
-#N canvas 1 104 1438 780 m 0;
-#X msg 170 157 set \$1;
-#X obj 170 197 outlet;
-#X obj 170 139 inlet;
-#X msg 170 177 0;
-#X obj 222 162 r init_\$1_\$2_\$3;
-#X connect 0 0 3 0;
-#X connect 2 0 0 0;
-#X connect 3 0 1 0;
-#X connect 4 0 3 0;
-#X restore 84 304 pd m;
 #X obj 114 228 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_FEEDBACK_GAIN empty
 FEEDBACK_GAIN -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 114 258 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_FEEDBACK_VOL empty
 FEEDBACK_VOL -2 -8 0 10 -262144 -1 -1 0 1;
-#N canvas 0 86 415 538 m 0;
-#X msg 170 157 set \$1;
-#X obj 170 197 outlet;
-#X obj 170 139 inlet;
-#X msg 170 177 0;
-#X obj 222 162 r init_\$1_\$2_\$3;
-#X connect 0 0 3 0;
-#X connect 2 0 0 0;
-#X connect 3 0 1 0;
-#X connect 4 0 3 0;
-#X restore 80 228 pd m;
-#N canvas 1 104 1438 780 m 0;
-#X msg 170 157 set \$1;
-#X obj 170 197 outlet;
-#X obj 170 139 inlet;
-#X msg 170 177 0;
-#X obj 222 162 r init_\$1_\$2_\$3;
-#X connect 0 0 3 0;
-#X connect 2 0 0 0;
-#X connect 3 0 1 0;
-#X connect 4 0 3 0;
-#X restore 80 258 pd m;
-#X connect 0 0 8 0;
-#X connect 1 0 6 0;
-#X connect 3 0 7 0;
-#X connect 4 0 5 0;
-#X connect 5 0 4 0;
-#X connect 6 0 1 0;
-#X connect 7 0 3 0;
-#X connect 8 0 0 0;
-#X connect 9 0 10 0;
-#X connect 10 0 9 0;
-#X connect 11 0 13 0;
-#X connect 12 0 14 0;
-#X connect 13 0 11 0;
-#X connect 14 0 12 0;
+#X obj 294 131 sssad TETRA_\$1_\$2_OSC_MIX TETRA_OSC_MISC_\$1_\$2;
+#X obj 291 178 sssad TETRA_\$1_\$2_NOISE_LEVEL TETRA_OSC_MISC_\$1_\$2
+;
+#X obj 291 227 sssad TETRA_\$1_\$2_FEEDBACK_GAIN TETRA_OSC_MISC_\$1_\$2
+;
+#X obj 293 258 sssad TETRA_\$1_\$2_FEEDBACK_VOL TETRA_OSC_MISC_\$1_\$2
+;
+#X obj 289 305 sssad TETRA_\$1_\$2_OSC_SLOP TETRA_OSC_MISC_\$1_\$2
+;
+#X obj 293 333 sssad TETRA_\$1_\$2_SYNC TETRA_OSC_MISC_\$1_\$2;
+#X obj 291 363 sssad TETRA_\$1_\$2_GLIDE_MODE TETRA_OSC_MISC_\$1_\$2
+;
+#X connect 0 0 14 0;
+#X connect 1 0 13 0;
+#X connect 3 0 8 0;
+#X connect 4 0 9 0;
+#X connect 5 0 12 0;
+#X connect 6 0 10 0;
+#X connect 7 0 11 0;
+#X connect 8 0 3 0;
+#X connect 9 0 4 0;
+#X connect 10 0 6 0;
+#X connect 11 0 7 0;
+#X connect 12 0 5 0;
+#X connect 13 0 1 0;
+#X connect 14 0 0 0;
 #X coords 0 -1 1 1 180 320 1 100 100;

@@ -1,47 +1,18 @@
-#N canvas 1 87 450 300 10;
+#N canvas 1 96 617 429 10;
 #X obj 120 260 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_OUTPUT_PAN empty
 OUTPUT_PAN -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 120 190 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_VCA_LEVEL empty VCA_LEVEL
 -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 120 130 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_PRESET_VOLUME empty
 PRESET_VOLUME -2 -8 0 10 -262144 -1 -1 0 1;
-#N canvas 1 87 830 535 m 0;
-#X msg 170 157 set \$1;
-#X obj 170 197 outlet;
-#X obj 170 139 inlet;
-#X msg 170 177 0;
-#X obj 222 162 r init_\$1_\$2_\$3;
-#X connect 0 0 3 0;
-#X connect 2 0 0 0;
-#X connect 3 0 1 0;
-#X connect 4 0 3 0;
-#X restore 86 190 pd m;
-#N canvas 1 112 1278 780 m 0;
-#X msg 170 157 set \$1;
-#X obj 170 197 outlet;
-#X obj 170 139 inlet;
-#X msg 170 177 127;
-#X obj 222 162 r init_\$1_\$2_\$3;
-#X connect 0 0 3 0;
-#X connect 2 0 0 0;
-#X connect 3 0 1 0;
-#X connect 4 0 3 0;
-#X restore 86 130 pd m;
-#N canvas 1 112 1278 780 m 0;
-#X msg 170 157 set \$1;
-#X obj 170 197 outlet;
-#X obj 170 139 inlet;
-#X msg 170 177 0;
-#X obj 222 162 r init_\$1_\$2_\$3;
-#X connect 0 0 3 0;
-#X connect 2 0 0 0;
-#X connect 3 0 1 0;
-#X connect 4 0 3 0;
-#X restore 86 260 pd m;
+#X obj 298 129 sssad TETRA_\$1_\$2_PRESET_VOLUME TETRA_VCA_\$1_\$2
+;
+#X obj 291 191 sssad TETRA_\$1_\$2_VCA_LEVEL TETRA_VCA_\$1_\$2;
+#X obj 291 258 sssad TETRA_\$1_\$2_OUTPUT_PAN TETRA_VCA_\$1_\$2;
 #X connect 0 0 5 0;
-#X connect 1 0 3 0;
-#X connect 2 0 4 0;
-#X connect 3 0 1 0;
-#X connect 4 0 2 0;
+#X connect 1 0 4 0;
+#X connect 2 0 3 0;
+#X connect 3 0 2 0;
+#X connect 4 0 1 0;
 #X connect 5 0 0 0;
 #X coords 0 -1 1 1 180 320 1 100 100;
