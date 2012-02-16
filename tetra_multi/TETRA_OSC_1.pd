@@ -1,16 +1,16 @@
-#N canvas 1 104 633 465 10;
+#N canvas 1 104 633 450 10;
 #X obj 101 115 cnv 15 178 304 empty empty empty 20 12 0 14 -257985
 -66577 0;
 #X obj 191 397 tgl 15 0 TETRA_\$1_\$2_OSC_1_KEY empty OSC_1_KEY 17
-7 0 10 -262144 -1 -1 0 1;
+7 0 10 -262144 -1 -1 1 1;
 #X obj 124 310 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_SUB_OSC_1_VOL empty
 SUB_OSC_1_VOL -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 125 361 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_GLIDE_1 empty GLIDE_1
 -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 124 260 hsl 102 15 0 101 0 0 TETRA_\$1_\$2_OSC_1_FREQ_FINE empty
-OSC_1_FREQ_FINE -2 -8 0 10 -262144 -1 -1 0 1;
+OSC_1_FREQ_FINE -2 -8 0 10 -262144 -1 -1 5000 1;
 #X obj 124 217 hsl 122 15 0 121 0 0 TETRA_\$1_\$2_OSC_1_FREQ empty
-OSC_1_FREQ -2 -8 0 10 -262144 -1 -1 0 1;
+OSC_1_FREQ -2 -8 0 10 -262144 -1 -1 2400 1;
 #X floatatom 121 232 5 0 0 0 - - -;
 #X floatatom 121 275 5 0 0 0 - - -;
 #X symbolatom 123 138 14 0 0 0 - - -;
