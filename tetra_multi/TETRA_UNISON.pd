@@ -1,4 +1,6 @@
-#N canvas 1 122 656 446 10;
+#N canvas 1 104 633 465 10;
+#X obj 101 115 cnv 15 178 304 empty empty empty 20 12 0 14 -257985
+-66577 0;
 #X obj 135 140 tgl 15 0 TETRA_\$1_\$2_UNISON_ON_OFF empty UNISON_ON_OFF
 17 7 0 10 -262144 -1 -1 0 1;
 #X obj 135 200 hradio 15 1 0 5 TETRA_\$1_\$2_UNISON_MODE empty UNISON_MODE
@@ -12,10 +14,10 @@ retrig \; 4 last note \; 5 last retrig;
 #X obj 292 173 sssad TETRA_\$1_\$2_UNISON_ON_OFF;
 #X obj 289 234 sssad TETRA_\$1_\$2_UNISON_MODE;
 #X obj 289 342 sssad TETRA_\$1_\$2_UNISON_ASSIGN;
-#X connect 0 0 5 1;
 #X connect 1 0 6 1;
-#X connect 3 0 7 1;
-#X connect 5 0 0 0;
+#X connect 2 0 7 1;
+#X connect 4 0 8 1;
 #X connect 6 0 1 0;
-#X connect 7 0 3 0;
+#X connect 7 0 2 0;
+#X connect 8 0 4 0;
 #X coords 0 -1 1 1 180 320 1 100 100;
