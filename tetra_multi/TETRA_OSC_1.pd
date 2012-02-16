@@ -1,4 +1,4 @@
-#N canvas 1 94 1022 474 10;
+#N canvas 1 89 1022 495 10;
 #X obj 191 397 tgl 15 0 TETRA_\$1_\$2_OSC_1_KEY empty OSC_1_KEY 17
 7 0 10 -262144 -1 -1 0 1;
 #X obj 124 310 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_SUB_OSC_1_VOL empty
@@ -17,35 +17,41 @@ OSC_1_FREQ -2 -8 0 10 -262144 -1 -1 0 1;
 #X text 123 121 OSC_1_SHAPE;
 #X floatatom -35 139 5 0 166 1 OSC_1_SHAPE - TETRA_#1_#2_OSC_1_SHAPE
 ;
-#X obj -39 97 unpack f s;
+#X obj -71 105 unpack f s;
 #X obj -68 33 inlet;
-#X obj -8 33 list append Pulse;
-#X obj -38 61 sssad TETRA_\$1_\$2_OSC_1_SHAPE TETRA_OSC_1_\$1_\$2;
-#X obj 301 219 sssad TETRA_\$1_\$2_OSC_1_FREQ TETRA_OSC_1_\$1_\$2;
-#X obj 299 261 sssad TETRA_\$1_\$2_OSC_1_FREQ_FINE TETRA_OSC_1_\$1_\$2
-;
-#X obj 300 306 sssad TETRA_\$1_\$2_OSC_1_SUB_OSC_1_VOL TETRA_OSC_1_\$1_\$2
-;
-#X obj 299 358 sssad TETRA_\$1_\$2_GLIDE_1 TETRA_OSC_1_\$1_\$2;
-#X obj 298 396 sssad TETRA_\$1_\$2_OSC_1_KEY TETRA_OSC_1_\$1_\$2;
-#X connect 0 0 19 0;
-#X connect 1 0 17 0;
-#X connect 2 0 18 0;
+#X obj -6 17 list append Pulse;
+#X obj -2 69 sssad TETRA_\$1_\$2_OSC_1_SHAPE;
+#X obj 301 259 sssad TETRA_\$1_\$2_OSC_1_FREQ;
+#X obj 299 301 sssad TETRA_\$1_\$2_OSC_1_FREQ_FINE;
+#X obj 299 398 sssad TETRA_\$1_\$2_GLIDE_1;
+#X obj 298 436 sssad TETRA_\$1_\$2_OSC_1_KEY;
+#X obj 7 97 unpack f s;
+#X obj 23 191 sel 54;
+#X obj 9 163 moses 4;
+#X obj 300 346 sssad TETRA_\$1_\$2_SUB_OSC_1_VOL;
+#X connect 0 0 18 1;
+#X connect 1 0 22 1;
+#X connect 2 0 17 1;
 #X connect 3 0 6 0;
-#X connect 3 0 16 0;
+#X connect 3 0 16 1;
 #X connect 4 0 5 0;
-#X connect 4 0 15 0;
+#X connect 4 0 15 1;
 #X connect 8 0 13 0;
 #X connect 11 0 10 0;
 #X connect 11 1 7 0;
 #X connect 12 0 11 0;
-#X connect 12 0 14 0;
+#X connect 12 0 14 1;
 #X connect 13 0 11 0;
-#X connect 13 0 14 0;
-#X connect 14 0 11 0;
+#X connect 13 0 14 1;
+#X connect 14 0 19 0;
 #X connect 15 0 4 0;
 #X connect 16 0 3 0;
-#X connect 17 0 1 0;
-#X connect 18 0 2 0;
-#X connect 19 0 0 0;
+#X connect 17 0 2 0;
+#X connect 18 0 0 0;
+#X connect 19 0 10 0;
+#X connect 19 0 21 0;
+#X connect 19 1 7 0;
+#X connect 20 1 8 0;
+#X connect 21 1 20 0;
+#X connect 22 0 1 0;
 #X coords 0 -1 1 1 180 320 1 100 100;

@@ -1,4 +1,4 @@
-#N canvas 1 96 676 325 10;
+#N canvas 1 59 1022 525 10;
 #X obj 127 211 hsl 128 15 0 255 0 0 TETRA_\$1_\$2_BREATH_AMT empty
 BREATH_AMT -2 -8 0 10 -262144 -1 -1 0 1;
 #X symbolatom 127 169 20 0 0 0 - - -;
@@ -6,15 +6,13 @@ BREATH_AMT -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 57 51 unpack f s;
 #X obj 57 -17 inlet;
 #X text 126 150 BREATH_DEST;
-#X obj 268 45 sssad TETRA_\$1_\$2_BREATH_DEST TETRA_CONTROLLERS_BREATH_\$1_\$2
-;
-#X obj 302 210 sssad TETRA_\$1_\$2_BREATH_AMT TETRA_CONTROLLERS_BREATH_\$1_\$2
-;
-#X connect 0 0 7 0;
+#X obj 272 37 sssad TETRA_\$1_\$2_BREATH_DEST;
+#X obj 274 240 sssad TETRA_\$1_\$2_BREATH_AMT;
+#X connect 0 0 7 1;
 #X connect 3 0 2 0;
 #X connect 3 1 1 0;
 #X connect 4 0 3 0;
-#X connect 4 0 6 0;
+#X connect 4 0 6 1;
 #X connect 6 0 3 0;
 #X connect 7 0 0 0;
 #X coords 0 -1 1 1 180 150 1 100 100;

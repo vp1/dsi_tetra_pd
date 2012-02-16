@@ -1,4 +1,4 @@
-#N canvas 116 140 758 314 10;
+#N canvas 1 59 1022 525 10;
 #X obj 122 206 hsl 128 15 0 255 0 0 TETRA_\$1_\$2_FOOT_AMT empty FOOT_AMT
 -2 -8 0 10 -262144 -1 -1 0 1;
 #X symbolatom 124 161 20 0 0 0 - - -;
@@ -6,15 +6,13 @@
 #X obj 42 68 unpack f s;
 #X obj 40 0 inlet;
 #X text 123 146 FOOT_DEST;
-#X obj 255 36 sssad TETRA_\$1_\$2_FOOT_DEST TETRA_CONTROLLERS_FOOT_\$1_\$2
-;
-#X obj 290 203 sssad TETRA_\$1_\$2_FOOT_AMT TETRA_CONTROLLERS_FOOT_\$1_\$2
-;
-#X connect 0 0 7 0;
+#X obj 231 51 sssad TETRA_\$1_\$2_FOOT_DEST;
+#X obj 285 243 sssad TETRA_\$1_\$2_FOOT_AMT;
+#X connect 0 0 7 1;
 #X connect 3 0 2 0;
 #X connect 3 1 1 0;
 #X connect 4 0 3 0;
-#X connect 4 0 6 0;
+#X connect 4 0 6 1;
 #X connect 6 0 3 0;
 #X connect 7 0 0 0;
 #X coords 0 -1 1 1 180 150 1 100 100;

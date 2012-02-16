@@ -1,4 +1,4 @@
-#N canvas 235 172 670 339 10;
+#N canvas 1 59 1022 525 10;
 #X symbolatom 128 156 20 0 0 0 - - -;
 #X obj 128 206 hsl 128 15 0 255 0 0 TETRA_\$1_\$2_VELOCITY_AMT empty
 VELOCITY_AMT -2 -8 0 10 -262144 -1 -1 0 1;
@@ -7,15 +7,13 @@ VELOCITY_AMT -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 25 117 unpack f s;
 #X obj 67 44 inlet;
 #X text 129 135 VELOCITY_DEST;
-#X obj 281 116 sssad TETRA_\$1_\$2_VELOCITY_DEST TETRA_CONTROLLERS_VEL_\$1_\$2
-;
-#X obj 300 208 sssad TETRA_\$1_\$2_VELOCITY_AMT TETRA_CONTROLLERS_VEL_\$1_\$2
-;
-#X connect 1 0 7 0;
+#X obj 281 116 sssad TETRA_\$1_\$2_VELOCITY_DEST;
+#X obj 278 251 sssad TETRA_\$1_\$2_VELOCITY_AMT;
+#X connect 1 0 7 1;
 #X connect 3 0 2 0;
 #X connect 3 1 0 0;
 #X connect 4 0 3 0;
-#X connect 4 0 6 0;
+#X connect 4 0 6 1;
 #X connect 6 0 3 0;
 #X connect 7 0 1 0;
 #X coords 0 -1 1 1 180 150 1 100 100;

@@ -1,4 +1,4 @@
-#N canvas 1 94 1022 474 10;
+#N canvas 1 59 1022 525 10;
 #X text 168 147 0 normal \; 1 toggle;
 #X obj 127 151 hradio 15 1 0 2 TETRA_\$1_\$2_PUSH_IT_MODE empty PUSH_IT_MODE
 0 -8 0 10 -262144 -1 -1 0;
@@ -13,24 +13,18 @@ SPLIT_POINT -2 -8 0 10 -262144 -1 -1 0 1;
 PUSH_IT_NOTE -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 127 227 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_PUSH_IT_VELOCITY
 empty PUSH_IT_VELOCITY -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 287 393 sssad TETRA_\$1_\$2_SPLIT_POINT TETRA_CONTROLLERS_\$1_\$2
-;
-#X obj 287 351 sssad TETRA_\$1_\$2_KEYBOARD_MODE TETRA_CONTROLLERS_\$1_\$2
-;
-#X obj 285 281 sssad TETRA_\$1_\$2_PBEND_RANGE TETRA_CONTROLLERS_\$1_\$2
-;
-#X obj 285 229 sssad TETRA_\$1_\$2_PUSH_IT_VELOCITY TETRA_CONTROLLERS_\$1_\$2
-;
-#X obj 284 199 sssad TETRA_\$1_\$2_PUSH_IT_NOTE TETRA_CONTROLLERS_\$1_\$2
-;
-#X obj 287 152 sssad TETRA_\$1_\$2_PUSH_IT_MODE TETRA_CONTROLLERS_\$1_\$2
-;
-#X connect 1 0 13 0;
-#X connect 2 0 9 0;
-#X connect 4 0 8 0;
-#X connect 5 0 10 0;
-#X connect 6 0 12 0;
-#X connect 7 0 11 0;
+#X obj 287 433 sssad TETRA_\$1_\$2_SPLIT_POINT;
+#X obj 287 391 sssad TETRA_\$1_\$2_KEYBOARD_MODE;
+#X obj 285 321 sssad TETRA_\$1_\$2_PBEND_RANGE;
+#X obj 282 279 sssad TETRA_\$1_\$2_PUSH_IT_VELOCITY;
+#X obj 284 239 sssad TETRA_\$1_\$2_PUSH_IT_NOTE;
+#X obj 287 192 sssad TETRA_\$1_\$2_PUSH_IT_MODE;
+#X connect 1 0 13 1;
+#X connect 2 0 9 1;
+#X connect 4 0 8 1;
+#X connect 5 0 10 1;
+#X connect 6 0 12 1;
+#X connect 7 0 11 1;
 #X connect 8 0 4 0;
 #X connect 9 0 2 0;
 #X connect 10 0 5 0;

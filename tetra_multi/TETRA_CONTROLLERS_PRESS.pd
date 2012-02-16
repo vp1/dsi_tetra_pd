@@ -1,21 +1,19 @@
-#N canvas 278 155 741 413 10;
+#N canvas 1 59 1022 525 10;
 #X symbolatom 127 164 20 0 0 0 - - -;
 #X obj 127 210 hsl 128 15 0 255 0 0 TETRA_\$1_\$2_PRESSURE_AMT empty
 PRESSURE_AMT -2 -8 0 10 -262144 -1 -1 0 1;
 #X floatatom 29 155 5 0 48 1 PRESSURE_DEST - TETRA_#1_#2_PRESSURE_DEST
 ;
 #X obj 29 119 unpack f s;
-#X obj 38 71 inlet;
+#X obj 106 57 inlet;
 #X text 127 147 PRESSURE_DEST;
-#X obj 293 105 sssad TETRA_\$1_\$2_PRESSURE_DEST TETRA_CONTROLLERS_PRESS_\$1_\$2
-;
-#X obj 293 205 sssad TETRA_\$1_\$2_PRESSURE_AMT TETRA_CONTROLLERS_PRESS_\$1_\$2
-;
-#X connect 1 0 7 0;
+#X obj 293 105 sssad TETRA_\$1_\$2_PRESSURE_DEST;
+#X obj 288 265 sssad TETRA_\$1_\$2_PRESSURE_AMT;
+#X connect 1 0 7 1;
 #X connect 3 0 2 0;
 #X connect 3 1 0 0;
 #X connect 4 0 3 0;
-#X connect 4 0 6 0;
+#X connect 4 0 6 1;
 #X connect 6 0 3 0;
 #X connect 7 0 1 0;
 #X coords 0 -1 1 1 180 150 1 100 100;

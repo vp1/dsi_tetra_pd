@@ -1,11 +1,11 @@
-#N canvas 1 94 1022 474 10;
+#N canvas 1 59 1022 525 10;
 #X obj 224 258 bng 15 250 50 0 empty empty WRITE 17 7 0 10 -262144
 -1 -1;
 #X symbolatom 130 318 20 0 0 0 - - -;
 #X floatatom 358 170 5 0 48 1 SEQ_2_DEST - TETRA_#1_#2_SEQ_2_DEST;
 #X obj 343 98 unpack f s;
 #X obj 246 60 inlet;
-#X obj 343 58 inlet;
+#X obj 348 40 inlet;
 #X text 104 366 0-63 pitch (0.5 resolution) \; 63 reset \;;
 #X obj 298 303 TETRA_sequencer \$1_\$2 2;
 #X obj 298 332 s TETRA_\$1_\$2_SEQ_2_STEP;
@@ -16,13 +16,13 @@
 #A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #X coords 0 127 15 0 160 120 1 0 0;
 #X restore 110 131 graph;
-#X obj 432 70 sssad TETRA_\$1_\$2_SEQ_2_DEST TETRA_SEQ_2_\$1_\$2;
+#X obj 431 74 sssad TETRA_\$1_\$2_SEQ_2_DEST;
 #X connect 0 0 7 1;
 #X connect 3 0 2 0;
 #X connect 3 1 1 0;
 #X connect 4 0 7 0;
 #X connect 5 0 3 0;
-#X connect 5 0 12 0;
+#X connect 5 0 12 1;
 #X connect 7 0 8 0;
 #X connect 7 1 9 0;
 #X connect 12 0 3 0;

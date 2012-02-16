@@ -1,17 +1,16 @@
-#N canvas 1 96 617 429 10;
+#N canvas 1 89 1022 495 10;
 #X obj 120 260 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_OUTPUT_PAN empty
 OUTPUT_PAN -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 120 190 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_VCA_LEVEL empty VCA_LEVEL
 -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 120 130 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_PRESET_VOLUME empty
 PRESET_VOLUME -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 298 129 sssad TETRA_\$1_\$2_PRESET_VOLUME TETRA_VCA_\$1_\$2
-;
-#X obj 291 191 sssad TETRA_\$1_\$2_VCA_LEVEL TETRA_VCA_\$1_\$2;
-#X obj 291 258 sssad TETRA_\$1_\$2_OUTPUT_PAN TETRA_VCA_\$1_\$2;
-#X connect 0 0 5 0;
-#X connect 1 0 4 0;
-#X connect 2 0 3 0;
+#X obj 298 179 sssad TETRA_\$1_\$2_PRESET_VOLUME;
+#X obj 291 241 sssad TETRA_\$1_\$2_VCA_LEVEL;
+#X obj 291 308 sssad TETRA_\$1_\$2_OUTPUT_PAN;
+#X connect 0 0 5 1;
+#X connect 1 0 4 1;
+#X connect 2 0 3 1;
 #X connect 3 0 2 0;
 #X connect 4 0 1 0;
 #X connect 5 0 0 0;

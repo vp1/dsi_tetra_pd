@@ -1,4 +1,4 @@
-#N canvas 1 96 722 451 10;
+#N canvas 1 89 1022 495 10;
 #X obj 130 230 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_VCA_DEL empty VCA_DEL
 -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 130 270 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_VCA_ATT empty VCA_ATT
@@ -13,22 +13,20 @@
 VCA_ENV_AMOUNT -2 -8 0 10 -262144 -1 -1 0 1;
 #X obj 130 170 hsl 128 15 0 127 0 0 TETRA_\$1_\$2_VCA_ENV_VEL_AMT empty
 VCA_ENV_VEL_AMT -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 294 130 sssad TETRA_\$1_\$2_VCA_ENV_AMOUNT TETRA_VCA_ENV_\$1_\$2
-;
-#X obj 298 169 sssad TETRA_\$1_\$2_VCA_ENV_VEL_AMT TETRA_VCA_ENV_\$1_\$2
-;
-#X obj 297 230 sssad TETRA_\$1_\$2_VCA_DEL TETRA_VCA_ENV_\$1_\$2;
-#X obj 295 272 sssad TETRA_\$1_\$2_VCA_ATT TETRA_VCA_ENV_\$1_\$2;
-#X obj 293 309 sssad TETRA_\$1_\$2_VCA_DEC TETRA_VCA_ENV_\$1_\$2;
-#X obj 297 349 sssad TETRA_\$1_\$2_VCA_SUS TETRA_VCA_ENV_\$1_\$2;
-#X obj 294 392 sssad TETRA_\$1_\$2_VCA_REL TETRA_VCA_ENV_\$1_\$2;
-#X connect 0 0 9 0;
-#X connect 1 0 10 0;
-#X connect 2 0 11 0;
-#X connect 3 0 12 0;
-#X connect 4 0 13 0;
-#X connect 5 0 7 0;
-#X connect 6 0 8 0;
+#X obj 294 160 sssad TETRA_\$1_\$2_VCA_ENV_AMOUNT;
+#X obj 288 203 sssad TETRA_\$1_\$2_VCA_ENV_VEL_AMT;
+#X obj 297 260 sssad TETRA_\$1_\$2_VCA_DEL;
+#X obj 295 302 sssad TETRA_\$1_\$2_VCA_ATT;
+#X obj 293 339 sssad TETRA_\$1_\$2_VCA_DEC;
+#X obj 297 379 sssad TETRA_\$1_\$2_VCA_SUS;
+#X obj 294 422 sssad TETRA_\$1_\$2_VCA_REL;
+#X connect 0 0 9 1;
+#X connect 1 0 10 1;
+#X connect 2 0 11 1;
+#X connect 3 0 12 1;
+#X connect 4 0 13 1;
+#X connect 5 0 7 1;
+#X connect 6 0 8 1;
 #X connect 7 0 5 0;
 #X connect 8 0 6 0;
 #X connect 9 0 0 0;

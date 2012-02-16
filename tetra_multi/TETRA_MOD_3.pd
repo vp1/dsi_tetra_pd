@@ -1,4 +1,4 @@
-#N canvas 1 94 1022 474 10;
+#N canvas 1 59 1022 525 10;
 #X floatatom -20 162 5 0 20 1 MOD_SOURCE_3 - TETRA_#1_#2_MOD_SOURCE_3
 ;
 #X floatatom 324 130 5 0 48 1 MOD_DEST_3 - TETRA_#1_#2_MOD_DEST_3;
@@ -12,18 +12,18 @@
 #X obj 340 36 inlet;
 #X text 127 144 MOD_SOURCE_3;
 #X text 127 274 MOD_DEST_3;
-#X obj 26 37 sssad TETRA_\$1_\$2_MOD_SOURCE_3 TETRA_MOD_3_\$1_\$2;
-#X obj 351 61 sssad TETRA_\$1_\$2_MOD_DEST_3 TETRA_MOD_3_\$1_\$2;
-#X obj 342 232 sssad TETRA_\$1_\$2_MOD_AMT_3 TETRA_MOD_3_\$1_\$2;
-#X connect 4 0 13 0;
+#X obj 22 37 sssad TETRA_\$1_\$2_MOD_SOURCE_3;
+#X obj 351 61 sssad TETRA_\$1_\$2_MOD_DEST_3;
+#X obj 335 255 sssad TETRA_\$1_\$2_MOD_AMT_3;
+#X connect 4 0 13 1;
 #X connect 5 0 0 0;
 #X connect 5 1 2 0;
 #X connect 6 0 1 0;
 #X connect 6 1 3 0;
 #X connect 7 0 5 0;
-#X connect 7 0 11 0;
+#X connect 7 0 11 1;
 #X connect 8 0 6 0;
-#X connect 8 0 12 0;
+#X connect 8 0 12 1;
 #X connect 11 0 5 0;
 #X connect 12 0 6 0;
 #X connect 13 0 4 0;

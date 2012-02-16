@@ -1,4 +1,4 @@
-#N canvas 1 94 1022 474 10;
+#N canvas 1 59 1022 525 10;
 #X obj 224 258 bng 15 250 50 0 empty empty WRITE 17 7 0 10 -262144
 -1 -1;
 #X symbolatom 130 318 20 0 0 0 - - -;
@@ -16,13 +16,13 @@
 #A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #X coords 0 127 15 0 160 120 1 0 0;
 #X restore 110 131 graph;
-#X obj 393 78 sssad TETRA_\$1_\$2_SEQ_4_DEST TETRA_SEQ_1_\$1_\$2;
+#X obj 393 78 sssad TETRA_\$1_\$2_SEQ_4_DEST;
 #X connect 0 0 8 1;
 #X connect 3 0 2 0;
 #X connect 3 1 1 0;
 #X connect 4 0 8 0;
 #X connect 5 0 3 0;
-#X connect 5 0 12 0;
+#X connect 5 0 12 1;
 #X connect 8 0 9 0;
 #X connect 8 1 10 0;
 #X connect 12 0 3 0;
