@@ -1,7 +1,7 @@
-#N canvas 1 94 1022 474 10;
+#N canvas 1 119 890 750 10;
 #X obj 159 26 inlet;
 #X obj 233 55 list prepend \$1;
-#X obj 233 160 list trim;
+#X obj 233 164 list trim;
 #X obj 233 25 inlet;
 #X obj 22 308 b;
 #X obj 159 53 b;
@@ -34,7 +34,7 @@
 #X obj 608 302 list trim;
 #X obj 543 277 route save saveonly;
 #X obj 610 498 list trim;
-#N canvas 513 284 322 286 s-SSSAD 0;
+#N canvas 1 134 890 735 s-SSSAD 0;
 #X obj 63 38 inlet;
 #X obj 63 176 s SSSAD;
 #X obj 123 176 s \$2-SSSAD;
@@ -78,7 +78,7 @@
 #X connect 10 1 12 0;
 #X connect 13 0 10 0;
 #X restore 233 84 pd s-SSSAD;
-#N canvas 537 192 330 246 r-SSSAD 0;
+#N canvas 1 134 890 735 r-SSSAD 0;
 #N canvas 1 94 450 300 mux2 0;
 #X obj 114 121 == 0;
 #X obj 190 145 spigot;
@@ -148,7 +148,7 @@
 #X connect 7 0 0 2;
 #X connect 8 0 5 0;
 #X restore 543 190 pd r-SSSAD_ADMIN;
-#N canvas 513 284 322 286 s-SSSAD_ADMIN 0;
+#N canvas 1 134 890 750 s-SSSAD_ADMIN 0;
 #X obj 63 39 inlet;
 #N canvas 0 0 450 300 demux2 0;
 #X obj 114 91 == 0;
@@ -185,7 +185,7 @@
 #X restore 610 522 pd s-SSSAD_ADMIN;
 #X obj 669 95 value \$1.\$2.SSSAD.req;
 #X obj 701 164 value \$1.\$2.SSSAD.req;
-#N canvas 539 183 330 246 r-SSSAD_ADMIN 0;
+#N canvas 1 134 890 750 r-SSSAD_ADMIN 0;
 #N canvas 0 0 450 300 mux2 0;
 #X obj 114 121 == 0;
 #X obj 190 145 spigot;
@@ -220,9 +220,10 @@
 #X connect 7 0 0 2;
 #X connect 8 0 5 0;
 #X restore 22 187 pd r-SSSAD_ADMIN;
-#X obj 105 317 r SSSAD-set;
+#X obj 105 294 r SSSAD-set;
 #X obj 105 337 route \$1;
 #X obj 105 357 b;
+#X obj 105 315 list trim;
 #X connect 0 0 5 0;
 #X connect 1 0 34 0;
 #X connect 2 0 6 0;
@@ -258,6 +259,7 @@
 #X connect 36 0 8 0;
 #X connect 38 0 13 0;
 #X connect 40 0 27 0;
-#X connect 41 0 42 0;
+#X connect 41 0 44 0;
 #X connect 42 0 43 0;
 #X connect 43 0 19 0;
+#X connect 44 0 42 0;

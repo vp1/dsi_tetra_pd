@@ -1,0 +1,8 @@
+#N canvas 893 349 546 252 10;
+#X obj 67 40 Tetr4/Program 1 A;
+#X obj 257 40 Tetr4/ParameterDump 1 A;
+#X msg 257 19 20 3;
+#X obj 67 60 Tetr4/Program 2 A;
+#X obj 67 80 Tetr4/Program 3 A;
+#X obj 67 100 Tetr4/Program 4 A;
+#X connect 2 0 1 0;

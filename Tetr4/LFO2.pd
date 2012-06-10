@@ -1,0 +1,54 @@
+#N canvas 1 89 890 795 10;
+#X obj 101 115 cnv 15 178 304 empty empty empty 20 12 0 14 -257985
+-66577 0;
+#X floatatom 313 92 5 0 48 1 Dest - Tetr4/#1/#2/LFO2/Dest;
+#X obj 155 198 tgl 15 0 Tetr4/\$1/\$2/LFO2/KeySync empty KeySync 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 153 237 hradio 15 1 0 5 Tetr4/\$1/\$2/LFO2/Shape empty Shape
+0 -8 0 10 -262144 -1 -1 0;
+#X text 167 258 0 tri \; 1 rev saw \; 2 saw \; 3 square \; 4 random
+;
+#X symbolatom 128 396 20 0 0 0 - - -;
+#X obj 125 347 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/LFO2/Amount empty
+Amount -2 -8 0 10 -262144 -1 -1 0 1;
+#X symbolatom 117 131 20 0 0 0 - - -;
+#X obj 114 164 hsl 151 15 0 150 0 0 empty empty UnsyncedFreq -2 -8
+0 10 -262144 -1 -1 0 1;
+#X floatatom -64 150 5 0 166 1 Freqncy - Tetr4/#1/#2/LFO2/Freqncy;
+#X obj 311 74 unpack f s;
+#X obj 312 26 inlet;
+#X obj -64 103 unpack f s;
+#X obj -91 41 inlet;
+#X obj -31 41 list append No_sync;
+#X obj 22 98 unpack f s;
+#X obj 22 118 moses 151;
+#X obj 352 51 sssad Tetr4/\$1/\$2/LFO2/Dest;
+#X text 117 116 Freqncy;
+#X obj -18 72 sssad Tetr4/\$1/\$2/LFO2/Freqncy;
+#X obj 305 231 sssad Tetr4/\$1/\$2/LFO2/KeySync;
+#X obj 311 277 sssad Tetr4/\$1/\$2/LFO2/Shape;
+#X obj 295 388 sssad Tetr4/\$1/\$2/LFO2/Amount;
+#X text 127 379 Dest;
+#X connect 2 0 20 1;
+#X connect 3 0 21 1;
+#X connect 6 0 22 1;
+#X connect 8 0 14 0;
+#X connect 10 0 1 0;
+#X connect 10 1 5 0;
+#X connect 11 0 10 0;
+#X connect 11 0 17 1;
+#X connect 12 0 9 0;
+#X connect 12 1 7 0;
+#X connect 13 0 12 0;
+#X connect 13 0 19 1;
+#X connect 14 0 12 0;
+#X connect 14 0 19 1;
+#X connect 15 0 16 0;
+#X connect 15 1 7 0;
+#X connect 16 0 8 0;
+#X connect 17 0 10 0;
+#X connect 19 0 15 0;
+#X connect 20 0 2 0;
+#X connect 21 0 3 0;
+#X connect 22 0 6 0;
+#X coords 0 -1 1 1 180 320 1 100 100;

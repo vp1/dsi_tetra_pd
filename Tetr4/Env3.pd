@@ -1,0 +1,55 @@
+#N canvas 1 104 890 780 10;
+#X obj 101 115 cnv 15 178 304 empty empty empty 20 12 0 14 -257985
+-66577 0;
+#X obj 129 154 tgl 15 0 Tetr4/\$1/\$2/Env3/Repeat empty Repeat 17 7
+0 10 -262144 -1 -1 0 1;
+#X symbolatom 129 132 20 0 0 0 - - -;
+#X obj 129 270 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/Env3/EnvDelay empty
+EnvDelay -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 129 300 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/Env3/EnvAttack empty
+EnvAttack -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 129 330 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/Env3/EnvDecay empty
+EnvDecay -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 129 360 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/Env3/EnvSustain empty
+EnvSustain -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 129 390 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/Env3/EnvRelease empty
+EnvRelease -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 129 190 hsl 128 15 0 255 0 0 Tetr4/\$1/\$2/Env3/Amount empty
+Amount -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 129 220 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/Env3/EnvVelocity
+empty EnvVelocity -2 -8 0 10 -262144 -1 -1 0 1;
+#X floatatom 52 85 5 0 48 1 Dest - Tetr4/#1/#2/Env3/Dest;
+#X obj 52 58 unpack f s;
+#X obj 55 6 inlet;
+#X obj 289 420 sssad TETRA_\$1_\$2_ENV3_REL;
+#X obj 69 32 sssad TETRA_\$1_\$2_ENV3_DEST;
+#X obj 286 171 sssad Tetr4/\$1/\$2/Env3/Repeat;
+#X obj 283 220 sssad Tetr4/\$1/\$2/Env3/Amount;
+#X text 128 115 Dest;
+#X obj 286 250 sssad Tetr4/\$1/\$2/Env3/EnvVelocity;
+#X obj 287 298 sssad Tetr4/\$1/\$2/Env3/EnvDelay;
+#X obj 287 332 sssad Tetr4/\$1/\$2/Env3/EnvAttack;
+#X obj 290 358 sssad Tetr4/\$1/\$2/Env3/EnvDecay;
+#X obj 288 388 sssad Tetr4/\$1/\$2/Env3/EnvSustain;
+#X connect 1 0 15 1;
+#X connect 3 0 19 1;
+#X connect 4 0 20 1;
+#X connect 5 0 21 1;
+#X connect 6 0 22 1;
+#X connect 7 0 13 1;
+#X connect 8 0 16 1;
+#X connect 9 0 18 1;
+#X connect 11 0 10 0;
+#X connect 11 1 2 0;
+#X connect 12 0 11 0;
+#X connect 12 0 14 1;
+#X connect 13 0 7 0;
+#X connect 14 0 11 0;
+#X connect 15 0 1 0;
+#X connect 16 0 8 0;
+#X connect 18 0 9 0;
+#X connect 19 0 3 0;
+#X connect 20 0 4 0;
+#X connect 21 0 5 0;
+#X connect 22 0 6 0;
+#X coords 0 -1 1 1 180 320 1 100 100;

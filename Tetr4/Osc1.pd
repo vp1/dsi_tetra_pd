@@ -1,0 +1,67 @@
+#N canvas 1 104 890 780 10;
+#X obj 101 115 cnv 15 178 304 empty empty empty 20 12 0 14 -257985
+-66577 0;
+#X obj 191 397 tgl 15 0 Tetr4/\$1/\$2/Osc1/Keyboard empty Keyboard
+17 7 0 10 -262144 -1 -1 0 1;
+#X obj 124 310 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/Osc1/SubOsc1 empty
+SubOsc1 -2 -8 0 10 -262144 -1 -1 3700 1;
+#X obj 125 361 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/Osc1/Glide empty
+Glide -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 124 260 hsl 102 15 0 101 0 0 Tetr4/\$1/\$2/Osc1/FineFreq empty
+FineFreq -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 124 217 hsl 122 15 0 121 0 0 Tetr4/\$1/\$2/Osc1/Frequency empty
+Frequency -2 -8 0 10 -262144 -1 -1 8500 1;
+#X floatatom 121 232 5 0 0 0 - - -;
+#X floatatom 121 275 5 0 0 0 - - -;
+#X symbolatom 123 138 14 0 0 0 - - -;
+#X obj 125 167 hsl 100 15 4 103 0 0 empty empty PulseWidth -2 -8 0
+10 -262144 -1 -1 7500 1;
+#X floatatom -133 226 5 0 166 1 Shape - Tetr4/#1/#2/Osc1/Shape;
+#X obj -133 38 inlet;
+#X obj 300 259 sssad Tetr4/\$1/\$2/Osc1/Frequency;
+#X obj -110 74 sssad Tetr4/\$1/\$2/Osc1/Shape;
+#X obj 299 301 sssad Tetr4/\$1/\$2/Osc1/FineFreq;
+#X obj 300 346 sssad Tetr4/\$1/\$2/Osc1/SubOsc1;
+#X obj 299 398 sssad Tetr4/\$1/\$2/Osc1/Glide;
+#X obj 298 436 sssad Tetr4/\$1/\$2/Osc1/Keyboard;
+#X obj -110 96 sel 0 1 2 3 54;
+#X msg -110 119 symbol Off;
+#X msg -94 139 symbol Saw;
+#X msg -78 159 symbol Tri;
+#X msg -62 181 symbol Saw/Tri;
+#X msg -46 203 symbol Square;
+#X msg -29 222 symbol Pulse;
+#X text 123 121 Shape;
+#X connect 1 0 17 1;
+#X connect 2 0 15 1;
+#X connect 3 0 16 1;
+#X connect 4 0 7 0;
+#X connect 4 0 14 1;
+#X connect 5 0 6 0;
+#X connect 5 0 12 1;
+#X connect 9 0 13 1;
+#X connect 9 0 10 0;
+#X connect 11 0 13 1;
+#X connect 11 0 10 0;
+#X connect 11 0 18 0;
+#X connect 12 0 5 0;
+#X connect 13 0 10 0;
+#X connect 13 0 18 0;
+#X connect 14 0 4 0;
+#X connect 15 0 2 0;
+#X connect 16 0 3 0;
+#X connect 17 0 1 0;
+#X connect 18 0 19 0;
+#X connect 18 1 20 0;
+#X connect 18 2 21 0;
+#X connect 18 3 22 0;
+#X connect 18 4 23 0;
+#X connect 18 5 24 0;
+#X connect 18 5 9 0;
+#X connect 19 0 8 0;
+#X connect 20 0 8 0;
+#X connect 21 0 8 0;
+#X connect 22 0 8 0;
+#X connect 23 0 8 0;
+#X connect 24 0 8 0;
+#X coords 0 -1 1 1 180 320 1 100 100;
