@@ -1,5 +1,0 @@
-#N canvas 179 217 450 300 10;
-#X floatatom 159 118 5 0 0 0 TETRA_#1_OSC_1_FREQ - TETRA_#1_OSC_1_FREQ
-;
-#X obj 158 55 inlet;
-#X connect 1 0 0 0;
