@@ -1,22 +1,19 @@
-#N canvas 1 104 890 780 10;
+#N canvas 1 119 1022 450 10;
 #X obj 101 115 cnv 15 178 304 empty empty empty 20 12 0 14 -257985
 -66577 0;
-#X obj 135 140 tgl 15 0 Tetr4/\$1/\$2/Unison/OnOff empty OnOff 17 7
-0 10 -262144 -1 -1 0 1;
-#X obj 135 200 hradio 15 1 0 5 Tetr4/\$1/\$2/Unison/Mode empty Mode
+#X obj 135 140 tgl 15 0 /Tetr4/\$1/\$2/Unison/OnOff empty OnOff 17
+7 0 10 -262144 -1 -1 0 1;
+#X obj 135 200 hradio 15 1 0 5 /Tetr4/\$1/\$2/Unison/Mode empty Mode
 0 -8 0 10 -262144 -1 -1 0;
 #X text 122 221 0 1 voice \; 1 all voices \; 2 all voices detune1 \;
 3 all voices detune2 \; 4 all voices detune3;
-#X obj 135 310 hradio 15 1 0 6 Tetr4/\$1/\$2/Unison/Assign empty Assign
+#X obj 135 310 hradio 15 1 0 6 /Tetr4/\$1/\$2/Unison/Assign empty Assign
 0 -8 0 10 -262144 -1 -1 0;
 #X text 120 332 0 low note \; 1 low retrig \; 2 high note \; 3 high
 retrig \; 4 last note \; 5 last retrig;
-#X obj 292 173 sssad Tetr4/\$1/\$2/Unison/OnOff;
-#X obj 289 234 sssad Tetr4/\$1/\$2/Unison/Mode;
-#X obj 289 342 sssad Tetr4/\$1/\$2/Unison/Assign;
-#X connect 1 0 6 1;
-#X connect 2 0 7 1;
-#X connect 4 0 8 1;
+#X obj 292 123 r /Tetr4/\$1/\$2/Unison/OnOff-set;
+#X obj 289 184 r /Tetr4/\$1/\$2/Unison/Mode-set;
+#X obj 289 292 r /Tetr4/\$1/\$2/Unison/Assign-set;
 #X connect 6 0 1 0;
 #X connect 7 0 2 0;
 #X connect 8 0 4 0;

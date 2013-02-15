@@ -1,5 +1,5 @@
-#N canvas 159 190 374 150 10;
-#X obj 87 182 outlet;
+#N canvas 894 44 545 840 10;
+#X obj 87 184 outlet;
 #X msg -22 17 0 Up;
 #X msg -22 37 1 Down;
 #X msg -22 57 2 Up/Down;
@@ -15,9 +15,9 @@
 #X msg 98 57 7 2oct_Up/Down;
 #X msg 98 87 8 2oct_Assign;
 #X msg 98 117 9 2oct_Random;
-#X obj -22 167 list;
-#X obj 98 167 list;
-#X obj 228 167 list;
+#X obj -22 167 unpack f;
+#X obj 98 167 unpack f;
+#X obj 228 167 unpack f;
 #X connect 1 0 16 0;
 #X connect 2 0 16 0;
 #X connect 3 0 16 0;

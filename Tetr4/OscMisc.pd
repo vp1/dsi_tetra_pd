@@ -1,40 +1,33 @@
-#N canvas 1 104 890 780 10;
+#N canvas 1 119 1022 450 10;
 #X obj 101 115 cnv 15 178 304 empty empty empty 20 12 0 14 -257985
 -66577 0;
-#X obj 180 346 hradio 15 1 0 4 Tetr4/\$1/\$2/MiscOsc/Glide empty Glide
+#X obj 180 346 hradio 15 1 0 4 /Tetr4/\$1/\$2/MiscOsc/Glide empty Glide
 0 -8 0 10 -262144 -1 -1 0;
-#X obj 115 346 tgl 15 0 Tetr4/\$1/\$2/MiscOsc/Sync21 empty Sync21 17
-7 0 10 -262144 -1 -1 0 1;
-#X text 173 368 0 rate \; 1 rate auto \; 2 time \; 3 time auto;
-#X obj 114 128 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/Mixer/OscMix empty
+#X obj 115 346 tgl 15 0 /Tetr4/\$1/\$2/MiscOsc/Sync21 empty Sync21
+17 7 0 10 -262144 -1 -1 0 1;
+#X text 175 365 0 rate \; 1 rate auto \; 2 time \; 3 time auto;
+#X obj 114 128 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/Mixer/OscMix empty
 OscMix -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 114 178 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/Mixer/NoiseLevel
+#X obj 114 178 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/Mixer/NoiseLevel
 empty NoiseLevel -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 115 304 hradio 15 1 0 6 Tetr4/\$1/\$2/MiscOsc/Slop empty Slop
+#X obj 115 304 hradio 15 1 0 6 /Tetr4/\$1/\$2/MiscOsc/Slop empty Slop
 0 -8 0 10 -262144 -1 -1 0;
-#X obj 114 228 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/Feedback/Gain empty
+#X obj 114 228 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/Feedback/Gain empty
 Feedback/Gain -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 114 258 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/Feedback/Volume empty
-Feedback/Volume -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 294 171 sssad Tetr4/\$1/\$2/Mixer/OscMix;
-#X obj 287 218 sssad Tetr4/\$1/\$2/Mixer/NoiseLevel;
-#X obj 291 267 sssad Tetr4/\$1/\$2/Feedback/Gain;
-#X obj 293 298 sssad Tetr4/\$1/\$2/Feedback/Volume;
-#X obj 289 345 sssad Tetr4/\$1/\$2/MiscOsc/Slop;
-#X obj 291 403 sssad Tetr4/\$1/\$2/MiscOsc/Glide;
-#X obj 293 373 sssad Tetr4/\$1/\$2/MiscOsc/Sync21;
-#X connect 1 0 14 1;
-#X connect 2 0 15 1;
-#X connect 4 0 9 1;
-#X connect 5 0 10 1;
-#X connect 6 0 13 1;
-#X connect 7 0 11 1;
-#X connect 8 0 12 1;
+#X obj 114 258 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/Feedback/Volume
+empty Feedback/Volume -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 294 111 r /Tetr4/\$1/\$2/Mixer/OscMix-set;
+#X obj 287 158 r /Tetr4/\$1/\$2/Mixer/NoiseLevel-set;
+#X obj 291 207 r /Tetr4/\$1/\$2/Feedback/Gain-set;
+#X obj 293 238 r /Tetr4/\$1/\$2/Feedback/Volume-set;
+#X obj 289 285 r /Tetr4/\$1/\$2/MiscOsc/Slop-set;
+#X obj 293 313 r /Tetr4/\$1/\$2/MiscOsc/Sync21-set;
+#X obj 291 343 r /Tetr4/\$1/\$2/MiscOsc/Glide-set;
 #X connect 9 0 4 0;
 #X connect 10 0 5 0;
 #X connect 11 0 7 0;
 #X connect 12 0 8 0;
 #X connect 13 0 6 0;
-#X connect 14 0 1 0;
-#X connect 15 0 2 0;
+#X connect 14 0 2 0;
+#X connect 15 0 1 0;
 #X coords 0 -1 1 1 180 320 1 100 100;

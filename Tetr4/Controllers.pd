@@ -1,0 +1,30 @@
+#N canvas 1 119 1022 450 10;
+#X obj 101 115 cnv 15 178 304 empty empty empty 20 12 0 14 -257985
+-66577 0;
+#X text 168 147 0 normal \; 1 toggle;
+#X obj 127 151 hradio 15 1 0 2 /Tetr4/\$1/\$2/PushItSw/Mode empty PushItSw/Mode
+0 -8 0 10 -262144 -1 -1 0;
+#X obj 127 353 hradio 15 1 0 3 /Tetr4/\$1/\$2/KeyMode/Mode empty KeyMode/Mode
+0 -8 0 10 -262144 -1 -1 0;
+#X text 215 337 0 normal \; 1 stack \; 2 split;
+#X obj 125 394 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/KeyMode/Split empty
+KeyMode/Split -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 125 286 hsl 24 15 0 12 0 0 /Tetr4/\$1/\$2/PWRange/Semitones
+empty PWRange/Semitones -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 127 197 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/PushItSw/Note empty
+PushItSw/Note -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 127 227 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/PushItSw/Velocity
+empty PushItSw/Velocity -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 287 130 r /Tetr4/\$1/\$2/PushItSw/Mode-set;
+#X obj 284 179 r /Tetr4/\$1/\$2/PushItSw/Note-set;
+#X obj 282 219 r /Tetr4/\$1/\$2/PushItSw/Velocity-set;
+#X obj 285 261 r /Tetr4/\$1/\$2/PWRange/Semitones-set;
+#X obj 287 331 r /Tetr4/\$1/\$2/KeyMode/Mode-set;
+#X obj 287 373 r /Tetr4/\$1/\$2/KeyMode/Split-set;
+#X connect 9 0 2 0;
+#X connect 10 0 7 0;
+#X connect 11 0 8 0;
+#X connect 12 0 6 0;
+#X connect 13 0 3 0;
+#X connect 14 0 5 0;
+#X coords 0 -1 1 1 180 320 1 100 100;

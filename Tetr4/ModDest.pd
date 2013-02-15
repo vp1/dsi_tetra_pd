@@ -1,4 +1,4 @@
-#N canvas 114 206 709 359 10;
+#N canvas 1 89 1438 780 10;
 #X msg 208 97 18 LFO_All_Freq;
 #X msg 208 127 19 LFO_1_Amt;
 #X msg 208 147 20 LFO_2_Amt;
@@ -31,7 +31,7 @@
 #X msg 208 237 24 Env_1_Amt;
 #X msg 208 257 25 Env_2_Amt;
 #X text 221 317 env 1 = filter \; env 2 = amp \; env 3 = env 3;
-#X obj 275 382 outlet;
+#X obj 275 384 outlet;
 #X msg -22 17 0 off;
 #X msg -22 47 1 Osc_1_Freq;
 #X msg -22 67 2 Osc_2_Freq;
@@ -50,10 +50,10 @@
 #X msg 208 37 15 LFO_2_Freq;
 #X msg 208 57 16 LFO_3_Freq;
 #X msg 208 77 17 LFO_4_Freq;
-#X obj -22 367 list;
-#X obj 208 367 list;
-#X obj 378 367 list;
-#X obj 538 367 list;
+#X obj -22 367 unpack f;
+#X obj 208 367 unpack f;
+#X obj 378 367 unpack f;
+#X obj 538 367 unpack f;
 #X connect 0 0 52 0;
 #X connect 1 0 52 0;
 #X connect 2 0 52 0;

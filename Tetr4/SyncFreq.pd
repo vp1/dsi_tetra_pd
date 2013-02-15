@@ -1,4 +1,4 @@
-#N canvas 188 307 278 198 10;
+#N canvas 1 104 891 780 10;
 #X obj 47 232 outlet;
 #X msg -22 17 151 32_steps;
 #X msg -22 37 152 16_steps;
@@ -16,8 +16,8 @@
 #X msg 138 97 164 1/6_step;
 #X msg 138 117 165 1/8_step;
 #X msg 138 137 166 1/16_step;
-#X obj -22 217 list;
-#X obj 138 217 list;
+#X obj -22 217 unpack f;
+#X obj 138 217 unpack f;
 #X connect 1 0 17 0;
 #X connect 2 0 17 0;
 #X connect 3 0 17 0;

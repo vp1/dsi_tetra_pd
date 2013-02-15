@@ -1,34 +1,27 @@
-#N canvas 1 104 890 780 10;
+#N canvas 1 119 1022 450 10;
 #X obj 101 115 cnv 15 178 304 empty empty empty 20 12 0 14 -257985
 -66577 0;
-#X obj 130 230 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/VCA/EnvDelay empty
+#X obj 130 230 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/VCA/EnvDelay empty
 EnvDelay -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 130 270 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/VCA/EnvAttack empty
+#X obj 130 270 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/VCA/EnvAttack empty
 EnvAttack -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 130 310 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/VCA/EnvDecay empty
+#X obj 130 310 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/VCA/EnvDecay empty
 EnvDecay -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 130 350 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/VCA/EnvSustain empty
+#X obj 130 350 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/VCA/EnvSustain empty
 EnvSustain -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 130 390 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/VCA/EnvRelease empty
+#X obj 130 390 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/VCA/EnvRelease empty
 EnvRelease -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 130 130 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/VCA/EnvelopeAmt empty
-EnvelopeAmt -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 130 170 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/VCA/EnvVelocity empty
-EnvVelocity -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 294 160 sssad Tetr4/\$1/\$2/VCA/EnvelopeAmt;
-#X obj 288 203 sssad Tetr4/\$1/\$2/VCA/EnvVelocity;
-#X obj 297 260 sssad Tetr4/\$1/\$2/VCA/EnvDelay;
-#X obj 295 302 sssad Tetr4/\$1/\$2/VCA/EnvAttack;
-#X obj 293 339 sssad Tetr4/\$1/\$2/VCA/EnvDecay;
-#X obj 297 379 sssad Tetr4/\$1/\$2/VCA/EnvSustain;
-#X obj 294 422 sssad Tetr4/\$1/\$2/VCA/EnvRelease;
-#X connect 1 0 10 1;
-#X connect 2 0 11 1;
-#X connect 3 0 12 1;
-#X connect 4 0 13 1;
-#X connect 5 0 14 1;
-#X connect 6 0 8 1;
-#X connect 7 0 9 1;
+#X obj 130 130 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/VCA/EnvelopeAmt
+empty EnvelopeAmt -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 130 170 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/VCA/EnvVelocity
+empty EnvVelocity -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 294 110 r /Tetr4/\$1/\$2/VCA/EnvelopeAmt-set;
+#X obj 288 153 r /Tetr4/\$1/\$2/VCA/EnvVelocity-set;
+#X obj 297 210 r /Tetr4/\$1/\$2/VCA/EnvDelay-set;
+#X obj 295 252 r /Tetr4/\$1/\$2/VCA/EnvAttack-set;
+#X obj 293 289 r /Tetr4/\$1/\$2/VCA/EnvDecay-set;
+#X obj 297 329 r /Tetr4/\$1/\$2/VCA/EnvSustain-set;
+#X obj 294 372 r /Tetr4/\$1/\$2/VCA/EnvRelease-set;
 #X connect 8 0 6 0;
 #X connect 9 0 7 0;
 #X connect 10 0 1 0;

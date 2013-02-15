@@ -122,8 +122,8 @@
 #X obj 1928 52 send_nrpn \$1 A KeyMode/Split 118;
 #X obj 1928 92 send_nrpn \$1 A KeyMode/Mode 119;
 #X obj 1708 12 send_nrpn \$1 A Unison/Mode 95;
-#X obj 2139 12 r Tetr4/\$1/ProgramChange;
-#X obj 2139 77 r Tetr4/\$1/BankSelect;
+#X obj 2139 12 r /Tetr4/\$1/ProgramChange;
+#X obj 2139 77 r /Tetr4/\$1/BankSelect;
 #X connect 0 0 9 0;
 #X connect 1 0 10 0;
 #X connect 2 0 11 0;

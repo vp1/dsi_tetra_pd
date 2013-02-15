@@ -1,0 +1,2 @@
+#N canvas 1 74 1021 495 10;
+#X obj 37 37 Tetr4/Program 1 A;

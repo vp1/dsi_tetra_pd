@@ -1,19 +1,16 @@
-#N canvas 1 104 890 780 10;
+#N canvas 1 119 1022 450 10;
 #X obj 101 115 cnv 15 178 304 empty empty empty 20 12 0 14 -257985
 -66577 0;
-#X obj 120 260 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/VCA/PanSpread empty
+#X obj 120 260 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/VCA/PanSpread empty
 PanSpread -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 120 190 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/VCA/Level empty VCA/Level
--2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 120 130 hsl 128 15 0 127 0 0 Tetr4/\$1/\$2/Program/Volume empty
+#X obj 120 190 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/VCA/Level empty
+VCA/Level -2 -8 0 10 -262144 -1 -1 0 1;
+#X obj 120 130 hsl 128 15 0 127 0 0 /Tetr4/\$1/\$2/Program/Volume empty
 Program/Volume -2 -8 0 10 -262144 -1 -1 0 1;
-#X obj 298 179 sssad Tetr4/\$1/\$2/Program/Volume;
-#X obj 291 241 sssad Tetr4/\$1/\$2/VCA/Level;
-#X obj 291 308 sssad Tetr4/\$1/\$2/VCA/PanSpread;
-#X connect 1 0 6 1;
-#X connect 2 0 5 1;
-#X connect 3 0 4 1;
-#X connect 4 0 3 0;
+#X obj 291 241 r /Tetr4/\$1/\$2/VCA/PanSpread-set;
+#X obj 291 173 r /Tetr4/\$1/\$2/VCA/Level-set;
+#X obj 298 112 r /Tetr4/\$1/\$2/Program/Volume-set;
+#X connect 4 0 1 0;
 #X connect 5 0 2 0;
-#X connect 6 0 1 0;
+#X connect 6 0 3 0;
 #X coords 0 -1 1 1 180 320 1 100 100;
